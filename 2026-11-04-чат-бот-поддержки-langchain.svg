@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker>
+<marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="1000" height="560" fill="#fff"/>
+<text x="30" y="36" font-size="20" font-weight="700" fill="#0F172A">Чат-бот поддержки интернет-магазина на LangChain, 2023 (схема)</text>
+<text x="30" y="58" font-size="13" fill="#64748B">Граф инженер прописывает заранее. Модель только заполняет узлы, путь выбирает не она.</text>
+<rect x="30" y="230" width="150" height="70" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="105" y="258" font-size="14" font-weight="700" text-anchor="middle" fill="#334155">Обращение</text>
+<text x="105" y="280" font-size="11" text-anchor="middle" fill="#64748B">«Где мой заказ?»</text>
+<rect x="220" y="220" width="170" height="90" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="305" y="252" font-size="14" font-weight="700" text-anchor="middle" fill="#1E3A8A">Роутер</text>
+<text x="305" y="272" font-size="11" text-anchor="middle" fill="#1E3A8A">LLMRouterChain</text>
+<text x="305" y="290" font-size="11" text-anchor="middle" fill="#1E3A8A">+ few-shot примеры</text>
+<rect x="450" y="90" width="150" height="60" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="525" y="116" font-size="13" font-weight="700" text-anchor="middle" fill="#1E3A8A">Извлечь номер</text>
+<text x="525" y="135" font-size="11" text-anchor="middle" fill="#1E3A8A">LLMChain, few-shot</text>
+<rect x="630" y="90" width="150" height="60" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="705" y="116" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">База заказов</text>
+<text x="705" y="135" font-size="11" text-anchor="middle" fill="#64748B">Python + SQL</text>
+<rect x="810" y="90" width="160" height="60" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="890" y="116" font-size="13" font-weight="700" text-anchor="middle" fill="#1E3A8A">Сформулировать</text>
+<text x="890" y="135" font-size="11" text-anchor="middle" fill="#1E3A8A">LLMChain</text>
+<rect x="450" y="235" width="150" height="60" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="525" y="261" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">Поиск по правилам</text>
+<text x="525" y="280" font-size="11" text-anchor="middle" fill="#64748B">векторная база</text>
+<rect x="630" y="235" width="150" height="60" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="705" y="261" font-size="13" font-weight="700" text-anchor="middle" fill="#1E3A8A">Ответ по правилам</text>
+<text x="705" y="280" font-size="11" text-anchor="middle" fill="#1E3A8A">RetrievalQA</text>
+<rect x="830" y="235" width="140" height="60" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="900" y="270" font-size="14" font-weight="700" text-anchor="middle" fill="#334155">Ответ клиенту</text>
+<rect x="450" y="380" width="150" height="60" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="525" y="406" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">Позвать оператора</text>
+<text x="525" y="425" font-size="11" text-anchor="middle" fill="#64748B">handoff</text>
+<g fill="none" stroke="#475569" stroke-width="2" marker-end="url(#a)">
+<line x1="180" y1="265" x2="218" y2="265"/>
+<path d="M390 240 Q420 120 448 120"/>
+<line x1="390" y1="265" x2="448" y2="265"/>
+<path d="M390 290 Q420 410 448 410"/>
+<line x1="600" y1="120" x2="628" y2="120"/>
+<line x1="780" y1="120" x2="808" y2="120"/>
+<line x1="895" y1="150" x2="895" y2="233"/>
+<line x1="600" y1="265" x2="628" y2="265"/>
+<line x1="780" y1="265" x2="828" y2="265"/>
+</g>
+<text x="384" y="178" font-size="11" text-anchor="end" fill="#64748B">статус заказа</text>
+<text x="419" y="256" font-size="11" text-anchor="middle" fill="#64748B">возврат</text>
+<text x="384" y="362" font-size="11" text-anchor="end" fill="#64748B">другое</text>
+<line x1="305" y1="310" x2="305" y2="455" stroke="#EF4444" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#r)"/>
+<text x="297" y="482" font-size="20" fill="#EF4444">✕</text>
+<text x="322" y="474" font-size="12" fill="#EF4444">«Пришёл битый, верните деньги и пришлите новый»:</text>
+<text x="322" y="492" font-size="12" fill="#EF4444">два сценария сразу, роутер выберет один, половина вопроса потеряна</text>
+<rect x="790" y="462" width="16" height="12" rx="3" fill="#DBEAFE" stroke="#3B82F6"/><text x="812" y="473" font-size="12" fill="#334155">вызов модели</text>
+<rect x="790" y="484" width="16" height="12" rx="3" fill="#F1F5F9" stroke="#94A3B8"/><text x="812" y="495" font-size="12" fill="#334155">детерминированный код</text>
+<text x="500" y="535" font-size="13" text-anchor="middle" font-weight="700" fill="#0F172A">шаг в сторону от графа — и бот не знает, что делать</text>
+</svg>

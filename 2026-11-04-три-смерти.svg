@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Три исхода вайбкода</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Это не инженерия, а слабоумие и отвага</text>
+<rect x="64" y="180" width="352" height="420" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="240.0" y="315.0" font-size="28" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Смерть мозга</text>
+<text x="240.0" y="374.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">думает агент —</text>
+<text x="240.0" y="402.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">перестаёшь думать ты</text>
+<text x="240.0" y="458.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">палец на Enter</text>
+<text x="240.0" y="486.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">и надежда, что выпадет</text>
+<rect x="464" y="180" width="352" height="420" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="640.0" y="301.0" font-size="28" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Смерть кошелька</text>
+<text x="640.0" y="360.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">умение, которое</text>
+<text x="640.0" y="388.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">школьник делает бесплатно,</text>
+<text x="640.0" y="416.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">стоит бесплатно</text>
+<text x="640.0" y="472.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">заказы пропали,</text>
+<text x="640.0" y="500.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">пришлось идти в найм</text>
+<rect x="864" y="180" width="352" height="420" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="1040.0" y="315.0" font-size="28" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Смерть проекта</text>
+<text x="1040.0" y="374.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">датчик — глаз человека,</text>
+<text x="1040.0" y="402.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">и он не видит:</text>
+<text x="1040.0" y="430.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">• тихих ошибок</text>
+<text x="1040.0" y="458.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">• отложенных эффектов</text>
+<text x="1040.0" y="486.0" font-size="20" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">• расползания архитектуры</text>
+<text x="640" y="664" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">На коротком отрезке глаза хватает, на длинном ошибки копятся</text>
+</svg>

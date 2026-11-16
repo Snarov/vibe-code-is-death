@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вайбкод — это смерть?</title>
+<!--
+  Презентация к докладу «Вайбкод — это смерть?».
+  Текст выступления по слайдам: 2026-11-04-вайбкод-это-смерть-речь-по-слайдам.md
+  Управление: ← → / PgUp PgDn / пробел / клик — листать; Home/End; F — полный экран.
+  PDF: печать из браузера (Ctrl+P), «Сохранить как PDF», поля — нет, фон — включить.
+-->
+<style>
+:root{
+  --ind:#5B4BEA; --ind-d:#4434C9; --ind-t:#4B3BDB; --deep:#2C1370;
+  --ink:#24213F; --muted:#615D85; --line:#E4E0FF; --soft:#F4F2FF;
+  --red:#E5486B; --red-bg:#FFF0F3; --amber:#F2A33A; --green:#22B59A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#120c33;font-family:Inter,"Segoe UI","Helvetica Neue",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.deck{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.slide{position:absolute;left:50%;top:50%;margin:-360px 0 0 -640px;width:1280px;height:720px;overflow:hidden;display:none;transform-origin:center center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.slide.active{display:block}
+html,body{overflow:hidden}
+.deck{overflow:clip;user-select:none;-webkit-user-select:none}
+
+/* фоны */
+.dark{background:linear-gradient(135deg,#5F4CEE 0%,#4B33D3 40%,#2C1370 100%);color:#fff}
+.dark::before{content:"";position:absolute;width:760px;height:760px;right:-260px;top:-320px;border-radius:50%;background:radial-gradient(circle,rgba(140,125,255,.35),rgba(140,125,255,0) 65%);pointer-events:none}
+.dark::after{content:"";position:absolute;width:640px;height:640px;left:-260px;bottom:-360px;border-radius:50%;background:radial-gradient(circle,rgba(30,8,90,.55),rgba(30,8,90,0) 70%);pointer-events:none}
+.light{background:#fff;color:var(--ink)}
+.light::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,#5F4CEE,#2C1370)}
+
+/* каркас */
+.wrap{position:absolute;inset:52px 72px 50px;display:flex;flex-direction:column;gap:26px;z-index:1}
+.body{flex:1;min-height:0;display:flex;flex-direction:column;gap:22px}
+.title{font-size:44px;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+.light .title{color:var(--ind-t)}
+.sub{font-size:21px;line-height:1.35;margin-top:12px;color:rgba(255,255,255,.78)}
+.light .sub{color:var(--muted)}
+.kicker{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.pg{position:absolute;right:30px;bottom:18px;font-size:14px;opacity:.5;z-index:2}
+.light .pg{bottom:22px}
+
+/* сетки */
+.row{display:flex;gap:20px;align-items:stretch}
+.center{align-items:center}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.g5{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.g5 .h{font-size:21px}
+.grow{flex:1}
+
+/* карточки */
+.glass{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:22px 24px}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.card.fill{background:linear-gradient(135deg,#5F4CEE,#3A1F9E);border:none;color:#fff}
+.glass.hl{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.45)}
+.bad{background:var(--red-bg);border:1.5px solid #F7B8C7}
+.glass.bad{background:rgba(255,95,130,.16);border-color:rgba(255,160,180,.5)}
+.h{font-size:24px;font-weight:650;line-height:1.2;margin-bottom:10px}
+.t{font-size:19px;line-height:1.42}
+.t+.t{margin-top:8px}
+.small{font-size:16px;line-height:1.4;opacity:.8}
+ul.l{list-style:none;font-size:19px;line-height:1.4}
+ul.l li{position:relative;padding-left:22px;margin-top:7px}
+ul.l li::before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.55}
+.light ul.l li::before{background:var(--ind);opacity:1}
+
+/* номер в кружке */
+.num{flex:none;width:44px;height:44px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:600;border:1.5px solid rgba(255,255,255,.85);color:#fff}
+.light .num{border:none;background:var(--ind);color:#fff}
+.num.sm{width:34px;height:34px;font-size:15px}
+
+/* плашки */
+.pill{display:inline-block;background:#7462FF;color:#fff;border-radius:999px;padding:11px 24px;font-size:18px;font-weight:500;box-shadow:0 8px 24px rgba(30,10,110,.35)}
+.chip{display:inline-block;padding:5px 13px;border-radius:999px;font-size:16px;line-height:1.3;white-space:nowrap}
+.chip.llm{background:var(--ind);color:#fff}
+.chip.code{border:1.5px solid var(--ind);color:var(--ind-t);background:#fff}
+.chip.w{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff}
+.chip.red{background:var(--red);color:#fff}
+.chip.amber{background:var(--amber);color:#2b1a00}
+.chip.green{background:var(--green);color:#fff}
+.chip.ghost{background:#fff;border:1px solid var(--line);color:var(--muted)}
+.chip.wl{background:#fff;color:var(--ind-t);font-weight:600}
+.chip.wo{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.chip.amb-o{border:2px solid var(--amber);color:#fff}
+.tag{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.ar{flex:none;align-self:center;font-size:30px;opacity:.6;line-height:1}
+.light .ar{color:var(--ind)}
+.q{font-style:normal}
+
+/* подсказка-формулировка (как карточки с лампочкой в шаблоне) */
+.tip{position:relative;background:#fff;color:var(--ink);border-radius:14px;padding:18px 26px 18px 70px;font-size:21px;line-height:1.4;font-weight:500;box-shadow:0 14px 34px rgba(25,8,95,.28)}
+.light .tip{border:1px solid var(--line);box-shadow:0 10px 28px rgba(75,59,219,.14)}
+.tip svg{position:absolute;left:24px;top:50%;transform:translateY(-50%);width:28px;height:28px}
+.tip b{color:var(--ind-t)}
+
+/* таймлайн */
+.tl{position:relative;display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:20px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:12px;height:2px;background:rgba(255,255,255,.4)}
+.tl .it{position:relative;padding-top:42px}
+.tl .it::before{content:"";position:absolute;left:0;top:4px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.18)}
+.tl .d{font-size:19px;font-weight:650;margin-bottom:8px}
+.tl .x{font-size:17px;line-height:1.35;opacity:.85}
+.tl .it.hl::before{background:#FFD36E;box-shadow:0 0 0 7px rgba(255,211,110,.3)}
+.tl .it.hl .d{color:#FFD36E}
+
+/* чат */
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{max-width:88%;padding:11px 16px;border-radius:16px;font-size:17px;line-height:1.38}
+.msg.me{align-self:flex-end;background:var(--ind);color:#fff;border-bottom-right-radius:5px}
+.msg.bot{align-self:flex-start;background:#fff;color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:5px}
+.dark .msg.bot{border:none}
+.msg .who{display:block;font-size:13px;font-weight:650;opacity:.6;margin-bottom:2px}
+.msg .tm{float:right;font-size:12px;opacity:.55;margin:6px 0 0 12px}
+
+/* уровни */
+.lv{display:flex;align-items:center;gap:18px;padding:11px 20px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.lv .t{flex:1}
+.lv.dim{opacity:.6}
+.lv.hl{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4)}
+
+.stat{font-size:64px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.death{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px}
+.death svg{width:120px;height:120px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.death .dk{font-size:24px;font-weight:500;opacity:.75}
+.death .dn{font-size:56px;font-weight:700;letter-spacing:-.02em;line-height:1.05}
+.big-quote{font-size:46px;font-weight:600;line-height:1.2;letter-spacing:-.01em}
+
+/* HUD */
+a.lnk{display:flex;flex-direction:column;color:inherit;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s}
+a.lnk:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.6)}
+.more{font-size:14px;font-weight:600;opacity:.75;letter-spacing:.02em;text-transform:none}
+.back{position:absolute;left:40px;bottom:16px;z-index:3;font-size:14px;font-weight:600;text-decoration:none;padding:6px 14px;border-radius:999px;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35)}
+.light .back{color:var(--ind-t);background:var(--soft);border-color:var(--line)}
+.hud{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);color:rgba(255,255,255,.35);font-size:12px;z-index:5;pointer-events:none}
+
+@page{size:1280px 720px;margin:0}
+@media print{
+  html,body{background:none;overflow:visible;height:auto}
+  .deck{position:static;display:block;overflow:visible}
+  .slide{display:block!important;position:relative;left:auto;top:auto;margin:0;transform:none!important;page-break-after:always;break-after:page}
+  .hud{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="bulb" viewBox="0 0 24 24"><path fill="none" stroke="#5B4BEA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2h5c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></symbol>
+</svg>
+
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide dark">
+  <div class="wrap" style="flex-direction:row;gap:56px;align-items:center">
+    <div class="grow">
+      <div class="kicker">Ответ на доклад коллеги</div>
+      <div style="font-size:34px;font-weight:500;opacity:.6;margin-top:26px;text-decoration:line-through;text-decoration-color:#FF6B8A;text-decoration-thickness:4px">Вайбкод — это жизнь?</div>
+      <h1 style="font-size:82px;font-weight:700;line-height:1.02;letter-spacing:-.02em;margin-top:14px">Вайбкод —<br>это смерть?</h1>
+      <div class="small" style="margin-top:40px">6 ноября 2026</div>
+    </div>
+    <div class="glass" style="width:470px;display:flex;flex-direction:column;gap:16px;padding:26px 28px">
+      <div class="tag" style="margin-bottom:0">О чём доклад</div>
+      <div class="row center" style="gap:16px"><span class="num sm">1</span><div class="t">Что такое вайбкод</div></div>
+      <div class="row center" style="gap:16px"><span class="num sm">2</span><div class="t">Его ограничения</div></div>
+      <div class="row center" style="gap:16px"><span class="num sm">3</span><div class="t">Во что он развивается: более зрелые подходы</div></div>
+      <div class="row center" style="gap:16px"><span class="num sm">4</span><div class="t">Где ещё работают агенты, кроме написания кода</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Вайбкод — это смерть. Тройная</div>
+      <div class="sub">Ответ коллеге, который спросил, жизнь ли это</div>
+    </div>
+    <div class="body" style="gap:24px">
+      <div class="g3 grow">
+        <div class="glass bad death"><svg viewBox="0 0 64 64"><path d="M24 10a10 10 0 0 0-10 10 9 9 0 0 0-4 15 9 9 0 0 0 6 14 9 9 0 0 0 16 3V12a8 8 0 0 0-8-2zM40 10a10 10 0 0 1 10 10 9 9 0 0 1 4 15 9 9 0 0 1-6 14 9 9 0 0 1-16 3"/><path d="M32 22h-6M32 36h-8M32 22h7M32 36h9"/></svg><div class="dk">Смерть</div><div class="dn">мозга</div></div>
+        <div class="glass bad death"><svg viewBox="0 0 64 64"><rect x="8" y="18" width="48" height="34" rx="6"/><path d="M14 18l26-8 4 8"/><path d="M42 30h14v10H42a5 5 0 0 1 0-10z"/><circle cx="44" cy="35" r="1.5"/></svg><div class="dk">Смерть</div><div class="dn">кошелька</div></div>
+        <div class="glass bad death"><svg viewBox="0 0 64 64"><path d="M8 12v44h48"/><path d="M12 48l10-14 8 6 10-22 4 8"/><path d="M44 26l4 14 6 12"/><circle cx="44" cy="26" r="2.5"/></svg><div class="dk">Смерть</div><div class="dn">проекта</div></div>
+      </div>
+      <div class="row center" style="justify-content:center"><span class="pill">А в конце — есть ли жизнь после смерти</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide light">
+  <div class="wrap" style="gap:20px">
+    <div>
+      <div class="title">О чём пойдёт речь</div>
+      <div class="sub">Сначала история, потом личный опыт, а в конце — куда дальше</div>
+    </div>
+    <div class="body" style="gap:18px">
+      <div class="row" style="gap:18px;height:300px">
+        <div class="card" style="width:300px;display:flex;flex-direction:column">
+          <div class="row center" style="gap:14px;margin-bottom:12px"><span class="num">1</span><div class="h" style="margin:0">Краткая история</div></div>
+          <div class="t">Термина и вообще явления: от Tab-автокомплита и первых агентов до слова «vibe coding».</div>
+          <div class="row" style="flex-wrap:wrap;gap:8px;margin-top:auto">
+            <span class="chip code">1996</span><span class="chip code">2022</span><span class="chip code">2025</span>
+          </div>
+        </div>
+        <div class="card fill grow" style="display:flex;flex-direction:column;padding-bottom:14px">
+          <div class="row center" style="gap:14px"><span class="num" style="background:#fff;color:var(--ind-t)">2</span><div class="h" style="margin:0">Мой личный опыт</div></div>
+          <svg viewBox="0 0 640 250" style="width:100%;flex:1;min-height:0;overflow:visible">
+            <path d="M20 200 C 70 200, 90 60, 140 55 S 230 50, 260 55 S 330 120, 380 175 S 430 205, 470 200 S 560 150, 620 40" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+            <g fill="#fff" font-size="21" font-weight="600" text-anchor="middle" font-family="inherit">
+              <circle cx="99" cy="92" r="8"/><text x="84" y="88" text-anchor="end">взлёт</text>
+              <circle cx="189" cy="52" r="8"/><text x="189" y="30">жизнь</text>
+              <circle cx="329" cy="115" r="8"/><text x="314" y="134" text-anchor="end">падение</text>
+              <circle cx="419" cy="208" r="9" fill="#FF6B8A"/><text x="419" y="240">смерть</text>
+              <circle cx="568" cy="123" r="8"/><text x="552" y="130" text-anchor="end">воскрешение</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="g2 grow">
+        <div class="card"><div class="row center" style="gap:14px;margin-bottom:10px"><span class="num">3</span><div class="h" style="margin:0">Как это развивалось и к чему пришло</div></div><div class="t">Жизнь после смерти</div></div>
+        <div class="card"><div class="row center" style="gap:14px;margin-bottom:10px"><span class="num">4</span><div class="h" style="margin:0">Куда дальше?</div></div><div class="t">Тема следующего доклада — на выбор зала</div></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Первые агенты: few-shot и цепочки вызовов</div>
+      <div class="sub">Два приёма из чата, переложенные в код</div>
+    </div>
+    <div class="body">
+      <div class="g2 grow">
+        <div class="card" style="display:flex;flex-direction:column;gap:10px">
+          <div class="h" style="margin:0">Few-shot: примеры, а не правила</div>
+          <div class="row center"><div class="t grow">«Где мой заказ? Жду неделю»</div><span class="chip code">доставка</span></div>
+          <div class="row center"><div class="t grow">«Хочу вернуть куртку»</div><span class="chip code">возврат</span></div>
+          <div class="row center"><div class="t grow">«Карта списала дважды»</div><span class="chip code">оплата</span></div>
+          <div style="height:1px;background:var(--line)"></div>
+          <div class="row center"><div class="t grow"><b>«Не тот размер, как обменять?»</b></div><span class="chip llm">возврат</span></div>
+          <div class="small" style="color:var(--muted);margin-top:auto">GPT-3: «Language Models are Few-Shot Learners», 2020</div>
+        </div>
+        <div class="card" style="display:flex;flex-direction:column;gap:12px">
+          <div class="h" style="margin:0">Цепочка: выход шага — вход следующего</div>
+          <div class="row center" style="gap:14px"><span class="num sm">1</span><div class="t grow">модель: вытащить номер заказа</div><span class="chip ghost">«48213»</span></div>
+          <div class="row center" style="gap:14px"><span class="num sm">2</span><div class="t grow">код: запрос в базу</div><span class="chip ghost">«в пути»</span></div>
+          <div class="row center" style="gap:14px"><span class="num sm">3</span><div class="t grow">модель: ответ клиенту</div></div>
+          <div class="small" style="color:var(--muted);margin-top:auto">В чате — руками: скопировал, вставил, добавил инструкцию</div>
+        </div>
+      </div>
+      <div class="row center" style="gap:12px;flex-wrap:wrap">
+        <span class="chip code"><b>окт 2022</b> · ReAct, LangChain</span>
+        <span class="chip code"><b>ноя 2022</b> · ChatGPT</span>
+        <span class="chip code"><b>дек 2022</b> · агенты в LangChain</span>
+        <span class="chip code"><b>мар 2023</b> · AutoGPT</span>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Без примеров модель отвечала как попало, <b>с примерами — предсказуемо</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Агенты со сценарием: бот на LangChain, 2023</div>
+      <div class="sub">Жёсткий, ригидный агент: граф рисует инженер, модель только заполняет узлы</div>
+    </div>
+    <div class="body">
+      <div class="row center grow">
+        <div class="glass" style="width:190px"><div class="tag">Обращение</div><div class="t">«Где мой заказ?»</div></div>
+        <span class="ar">→</span>
+        <div class="glass hl" style="width:210px"><div class="h" style="margin-bottom:4px">Роутер</div><div class="t">LLM + few-shot</div></div>
+        <span class="ar">→</span>
+        <div class="grow" style="display:flex;flex-direction:column;gap:14px">
+          <div class="row center" style="gap:10px"><span class="small" style="width:120px">статус заказа</span><span class="chip wl">извлечь номер</span><span class="ar" style="font-size:20px">→</span><span class="chip wo">база заказов</span><span class="ar" style="font-size:20px">→</span><span class="chip wl">ответ</span></div>
+          <div class="row center" style="gap:10px"><span class="small" style="width:120px">возврат</span><span class="chip wo">поиск по правилам</span><span class="ar" style="font-size:20px">→</span><span class="chip wl">ответ по правилам</span></div>
+          <div class="row center" style="gap:10px"><span class="small" style="width:120px">другое</span><span class="chip w">позвать оператора</span></div>
+          <div class="row center" style="gap:14px;margin-top:6px"><span class="chip wl" style="font-size:13px">вызов модели</span><span class="chip wo" style="font-size:13px">детерминированный код</span></div>
+        </div>
+      </div>
+      <div class="glass bad">
+        <div class="t"><b>«Пришёл битый, верните деньги и пришлите новый»</b> — два сценария сразу. Роутер выберет один, половина вопроса потеряна.</div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Пути, которого инженер не нарисовал, <b>для бота не существует</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section id="no-scenario" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Агенты без сценария: путь выбирает сам агент</div>
+      <div class="sub">Появились агенты общего назначения — и первыми из них стали кодинг-агенты</div>
+    </div>
+    <div class="body">
+      <div class="row grow" style="gap:20px;align-items:stretch">
+        <div class="card" style="flex:1;display:flex;flex-direction:column;gap:14px">
+          <div class="tag" style="color:var(--muted)">сначала</div>
+          <div class="h" style="font-size:28px;margin:0">Со сценарием</div>
+          <div class="row center" style="gap:8px;flex-wrap:wrap">
+            <span class="chip code">роутер</span><span class="ar" style="font-size:20px">→</span><span class="chip code">цепочка</span><span class="ar" style="font-size:20px">→</span><span class="chip code">ответ</span>
+          </div>
+          <div class="t">Под каждую задачу инженер собирает на LangChain свой граф. Самый частый случай — саппорт.</div>
+          <div class="t" style="margin-top:auto"><b>Сценарий рисует инженер</b></div>
+        </div>
+        <div style="display:flex;align-items:center"><span class="ar" style="font-size:40px">→</span></div>
+        <div class="card fill" style="flex:1;display:flex;flex-direction:column;gap:14px">
+          <div class="tag">потом</div>
+          <div class="h" style="font-size:28px;margin:0">Без сценария</div>
+          <div class="row center" style="gap:8px;flex-wrap:wrap">
+            <span class="chip wl">читает проект</span><span class="chip wl">правит файлы</span><span class="chip wl">запускает команды</span><span class="chip wl">смотрит на ошибки</span><span style="font-size:22px">↺</span>
+          </div>
+          <div class="t">Агент общего назначения: жёсткого графа больше нет.</div>
+          <div class="t" style="margin-top:auto"><b>Путь выбирает агент</b></div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Жёсткого сценария больше нет: <b>путь агент выбирает сам</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section id="turn" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Поворот: агент пишет код вместо нас</div>
+      <div class="sub">До этого — разработка агентов. Дальше — разработка с помощью агентов</div>
+    </div>
+    <div class="body">
+      <div class="row grow" style="gap:20px;align-items:stretch">
+        <div class="glass" style="flex:1">
+          <div class="tag">было</div>
+          <div class="h" style="font-size:34px;margin:8px 0 16px">Разработка агентов</div>
+          <div class="t" style="font-size:24px">Агент — продукт. Инженер пишет бота поддержки, рисует граф, агент решает одну задачу.</div>
+        </div>
+        <div style="display:flex;align-items:center"><span class="ar" style="font-size:40px">→</span></div>
+        <div class="glass hl" style="flex:1">
+          <div class="tag">стало</div>
+          <div class="h" style="font-size:34px;margin:8px 0 16px">Разработка с помощью агентов</div>
+          <div class="t" style="font-size:24px">Агент — инструмент. Он сам пишет код, а инженер говорит, что нужно.</div>
+        </div>
+      </div>
+      <div class="glass" style="text-align:center;padding:26px 30px">
+        <div style="font-size:32px;font-weight:650;line-height:1.25">«А не автоматизировать ли нам наконец-таки саму разработку?»</div>
+        <div class="t" style="margin-top:10px;opacity:.8">К этому шли с самого начала: главная влажная фантазия всех, включая меня</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Так появился вайбкод</div>
+      <div class="sub">Прототип собирается без спеки, архитектуры и SDLC: «сделай красиво», «нет, не так», «ну вот, почти»</div>
+    </div>
+    <div class="body">
+      <div class="row grow" style="gap:28px;align-items:stretch;min-height:0">
+        <svg viewBox="10 56 490 372" style="height:100%;max-width:56%" font-family="inherit">
+        <defs>
+          <marker id="mo1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#E08A16"/></marker>
+          <marker id="mg1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22B59A"/></marker>
+        </defs>
+        <g font-size="15" fill="#615D85">
+          <rect x="20" y="60" width="470" height="360" rx="16" fill="#F4F2FF" stroke="#E4E0FF"/>
+          <text x="255" y="92" font-size="20" font-weight="700" text-anchor="middle" fill="#4B3BDB">Вайбкод: датчик — человек</text>
+          <circle cx="60" cy="330" r="7" fill="#24213F"/><text x="40" y="358">«сделай лендинг»</text>
+          <circle cx="420" cy="140" r="30" fill="#FFF1DC" stroke="#F2A33A" stroke-width="2"/><circle cx="420" cy="140" r="5" fill="#E08A16"/><text x="420" y="192" text-anchor="middle" fill="#B5650A" font-weight="600">«ок, норм»</text>
+          <polyline points="60,330 180,290 140,220 270,205 300,160 392,145" fill="none" stroke="#E08A16" stroke-width="3" marker-end="url(#mo1)"/>
+          <g fill="#fff" stroke="#E08A16" stroke-width="2.5"><circle cx="180" cy="290" r="6"/><circle cx="140" cy="220" r="6"/><circle cx="270" cy="205" r="6"/><circle cx="300" cy="160" r="6"/></g>
+          <text x="194" y="304">«нет, не так»</text>
+          <text x="34" y="202">«кнопку больше»</text>
+          <text x="282" y="228">«почти»</text>
+          <text x="288" y="152" text-anchor="end">«ещё чуть-чуть»</text>
+          <text x="255" y="398" text-anchor="middle" font-size="14">каждую итерацию измеряет глаз человека:</text>
+          <text x="255" y="414" text-anchor="middle" font-size="14">видно только то, что на экране</text>
+        </g>
+      </svg>
+        <div class="card grow" style="display:flex;flex-direction:column;justify-content:center;gap:18px">
+          <div class="tag" style="color:var(--ind-t)">Human in the loop</div>
+          <div class="h" style="font-size:28px">Датчик — человек</div>
+          <div class="t">Каждое «нет, не так» — измерение. По нему агент шаг за шагом приближает решение к желаемому.</div>
+          <div class="t">Тот же цикл, что у агентов с обратной связью: шаг, измерение, поправка.</div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Отдельный шаг случаен, но <b>траектория в целом сходится</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Явление появилось раньше, чем название</div>
+      <div class="sub">От автокомплита до vibe coding · шкала не в масштабе</div>
+    </div>
+    <div class="body" style="justify-content:center">
+      <div class="tl">
+        <div class="it"><div class="d">1996</div><div class="x">IntelliSense: Tab по именам</div></div>
+        <div class="it"><div class="d">2020</div><div class="x">GPT-3: few-shot</div></div>
+        <div class="it"><div class="d">окт 2022</div><div class="x">ReAct, LangChain</div></div>
+        <div class="it"><div class="d">ноя 2022</div><div class="x">ChatGPT</div></div>
+        <div class="it"><div class="d">мар 2023</div><div class="x">AutoGPT</div></div>
+        <div class="it"><div class="d">лето 2023</div><div class="x">я: Cursor 0.2</div></div>
+        <div class="it"><div class="d">окт–ноя 2024</div><div class="x">Bolt.new, Lovable</div></div>
+        <div class="it hl"><div class="d">фев 2025</div><div class="x">Карпатый: «vibe coding»</div></div>
+      </div>
+      <div class="glass" style="margin-top:34px">
+        <div class="t" style="font-size:22px">Отдаться вайбу и забыть, что код вообще существует.</div>
+      </div>
+    </div>
+    <div class="tip"><svg><use href="#bulb"/></svg>Карпатый дал имя тому, что уже было: <b>так работали многие, и я тоже</b></div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Я заказываю код: секретный взлёт 2024</div>
+      <div class="sub">С Cursor 0.2 летом 2023. Про Cursor — никому, кроме самых достойных</div>
+    </div>
+    <div class="body">
+      <div class="row center" style="gap:12px">
+        <div class="card grow" style="padding:14px 18px"><div class="tag" style="color:var(--muted)">автокомплит</div><b>Пишу код я</b></div>
+        <span class="ar">→</span>
+        <div class="card grow" style="padding:14px 18px"><div class="tag" style="color:var(--muted)">инлайн-команды</div><b>Пишу, но быстрее</b></div>
+        <span class="ar">→</span>
+        <div class="card fill grow" style="padding:14px 18px"><div class="tag">агенты</div><b>Заказываю код: день → час</b></div>
+      </div>
+      <div class="g4 grow">
+        <div class="card fill"><div class="stat">×5</div><div class="t" style="margin-top:14px">заказов, чем у остальных</div></div>
+        <div class="card"><div class="stat" style="color:var(--ind-t)">30 мин</div><div class="t" style="margin-top:14px">максимум на лендинг в конструкторе</div></div>
+        <div class="card"><div class="stat" style="color:var(--ind-t)">$10</div><div class="t" style="margin-top:14px">за лендинг</div></div>
+        <div class="card"><div class="stat" style="color:var(--ind-t)">~1000</div><div class="t" style="margin-top:14px">сайтов почти на пассиве</div></div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Качество так себе, но <b>очень рабочее, особенно UI</b>. Фора таяла, но 2025-й был ещё жирным</div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Игровой автомат, только вместо жетонов — токены</div>
+      <div class="sub">Секрет перестал быть секретом: вайбкод захлестнул всех</div>
+    </div>
+    <div class="body">
+      <div class="row grow">
+        <div class="card" style="flex:1.2;display:flex;flex-direction:column;justify-content:center;gap:20px">
+          <div class="row center" style="gap:12px">
+            <span class="chip code" style="font-size:20px">промпт</span><span class="ar">→</span>
+            <span class="chip code" style="font-size:20px">Enter</span><span class="ar">→</span>
+            <span class="chip llm" style="font-size:20px">выпало?</span>
+          </div>
+          <div class="row center" style="gap:12px"><span class="chip green">да</span><span class="t">дофамин — мгновенно, без усилий</span></div>
+          <div class="row center" style="gap:12px"><span class="chip red">нет</span><span class="t">жмёшь ещё раз ↺</span></div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:20px">
+          <div class="card fill grow">
+            <div class="t" style="font-size:24px;font-weight:600;line-height:1.3">«Сделал SaaS за выходные без единой строчки кода»</div>
+            <div class="small" style="margin-top:10px">типичный пост в ленте</div>
+          </div>
+          <div class="card">
+            <div class="t">Но получалось: тулзы, прототипы, иногда реально полезное бизнесу. <b>Поделки, низкокачественные, но рабочие.</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Мгновенный результат без усилий — <b>самый дешёвый дофамин из доступных</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Вайбкод меня сначала озолотил, а потом убил</div>
+    </div>
+    <div class="body">
+      <div class="row grow">
+        <div class="glass" style="flex:1.25;padding:16px 18px">
+          <div class="tag">Доход с фриланса · без шкалы, только форма</div>
+          <svg viewBox="0 0 620 300" style="width:100%;height:auto;display:block">
+            <line x1="20" y1="260" x2="600" y2="260" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+            <line x1="285" y1="30" x2="285" y2="260" stroke="rgba(255,255,255,.3)" stroke-dasharray="5 5"/>
+            <line x1="320" y1="30" x2="320" y2="260" stroke="rgba(255,255,255,.3)" stroke-dasharray="5 5"/>
+            <line x1="490" y1="30" x2="490" y2="260" stroke="rgba(255,141,166,.55)" stroke-dasharray="5 5"/>
+            <text x="281" y="22" fill="#fff" opacity=".75" font-size="13" text-anchor="end">Bolt.new</text>
+            <text x="324" y="22" fill="#fff" opacity=".75" font-size="13" text-anchor="start">Lovable</text>
+            <path id="incomecurve" d="M30 236 C 80 230, 110 190, 150 130 S 220 64, 260 62 S 440 62, 490 78 C 515 95, 530 200, 560 228 S 585 244, 595 245" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="30" cy="236" r="6" fill="#fff"/>
+            <circle id="hire-dot" cx="205" cy="74" r="7" fill="#7CF2D0"/>
+            <circle cx="400" cy="65" r="7" fill="#FFD36E"/>
+            <circle cx="595" cy="245" r="7" fill="#FF8DA6"/>
+            <text x="22" y="204" fill="#fff" font-size="15">Cursor 0.2</text>
+            <text x="400" y="46" fill="#FFD36E" font-size="15" font-weight="600" text-anchor="middle">2025: всё ещё жирно</text>
+            <line id="hire-line" x1="205" y1="84" x2="205" y2="140" stroke="#7CF2D0" stroke-dasharray="3 4"/>
+            <text x="215" y="160" fill="#7CF2D0" font-size="15" font-weight="600">2024: смекнул и ушёл</text><text x="215" y="179" fill="#7CF2D0" font-size="15" font-weight="600">в найм — страховка</text>
+            <text x="482" y="215" fill="#FF8DA6" font-size="15" font-weight="600" text-anchor="end">резкое падение</text>
+            <text x="530" y="250" fill="#FF8DA6" font-size="15" font-weight="600" text-anchor="end">заказы пропали</text>
+            <g fill="#fff" opacity=".7" font-size="14" text-anchor="middle">
+              <text x="50" y="284">лето 2023</text><text x="200" y="284">2024</text><text x="302" y="284">осень 2024</text><text x="415" y="284">1-я пол. 2025</text><text x="545" y="284">2-я пол. 2025</text>
+            </g>
+          </svg>
+        </div>
+        <div class="glass" style="flex:1">
+          <ul class="l" style="margin-top:-7px">
+            <li>Порог входа упал до нуля: школьники вайбкодят почти бесплатно</li>
+            <li>Первым умер конструктор: Lovable соберёт лендинг бесплатно за пять минут</li>
+            <li>Заказы не стало меньше — <b>они пропали</b></li>
+            <li>Ещё в 2024-м я смекнул, к чему всё идёт, и <b>подстраховался наймом</b>. Так всё и случилось</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>«Быстро и низкокачественно» — <b>не навык, а временное окно</b>. Я сам был тем школьником, только на год раньше</div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Две недели — восторг, на третий месяц — болото</div>
+      <div class="sub">Лендинг живёт неделю, большой продукт — месяцы и годы</div>
+    </div>
+    <div class="body">
+      <div class="row grow">
+        <div class="card" style="flex:1.3;padding:16px 18px">
+          <div class="tag" style="color:var(--ind-t)">Скорость разработки во времени</div>
+          <svg viewBox="0 0 620 290" style="width:100%;height:auto;display:block">
+            <rect x="20" y="150" width="580" height="104" fill="#FFE4EA" opacity=".6"/>
+            <line x1="20" y1="254" x2="600" y2="254" stroke="#B7B3D6" stroke-width="1.5"/>
+            <line x1="20" y1="150" x2="600" y2="150" stroke="#8C88B0" stroke-width="2.5" stroke-dasharray="8 6"/>
+            <text x="596" y="140" fill="#615D85" font-size="15" text-anchor="end">руками</text>
+            <path d="M30 48 C 100 40, 150 44, 200 62 S 320 120, 390 160 S 520 222, 590 236" fill="none" stroke="#5B4BEA" stroke-width="4.5" stroke-linecap="round"/>
+            <text x="40" y="34" fill="#4B3BDB" font-size="16" font-weight="600">вайбкод</text>
+            <text x="250" y="240" fill="#A3223F" font-size="14" text-anchor="middle">ниже линии — руками было бы быстрее</text>
+            <g fill="#615D85" font-size="14" text-anchor="middle">
+              <text x="45" y="278">неделя 1</text><text x="160" y="278">неделя 2</text><text x="300" y="278">месяц 1</text><text x="430" y="278">месяц 2</text><text x="560" y="278">месяц 3+</text>
+            </g>
+          </svg>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="h">Что внутри</div>
+          <ul class="l">
+            <li>каша из документов, противоречащих коду и друг другу</li>
+            <li>агент сам написал README, сам забыл, сам противоречит</li>
+            <li>фикс ломает два других места</li>
+            <li>агент чинит то, что сломал вчера</li>
+            <li>автор давно потерял границы модулей, архитектуру и смысл существования проекта</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Агент не ускоряет, а замедляет. Руками уже никто не может. <b>Проект не развивается, а разваливается</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide dark">
+  <div class="wrap" style="gap:20px">
+    <div>
+      <div class="title">Уровни использования ИИ</div>
+      <div class="sub">Зрелые подходы начинаются только с пятого. До него — не инженерия, а слабоумие и отвага</div>
+    </div>
+    <div class="body" style="gap:10px">
+      <div class="lv dim"><span class="num sm">1</span><div class="t">Не используют вообще — вымирающий вид</div></div>
+      <div class="lv dim"><span class="num sm">2</span><div class="t">Чат для текста: подсказки, генератор ответов</div></div>
+      <div class="lv"><span class="num sm">3</span><div class="t">Агенты для кода, на несколько процентов возможностей. <b>Мышление делегируют агенту</b></div><span class="chip red">вайбкод</span></div>
+      <div class="lv"><span class="num sm">4</span><div class="t">MCP, скиллы, память, спеки, SDD — но доверяет человек на глаз</div><span class="chip amber">полувайбкод</span></div>
+      <div class="lv hl"><span class="num sm">5</span><div class="t">Агентные воркфлоу: петли обратной связи, верификация, хуки, тесты-оракул</div><span class="chip green">зрелые подходы</span></div>
+      <div class="lv hl"><span class="num sm">6</span><div class="t">Агент на всём процессе целиком и агенты в проде</div><span class="chip green">зрелые подходы</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Три исхода вайбкода</div>
+    </div>
+    <div class="body">
+      <div class="g3 grow">
+        <div class="card bad">
+          <div class="row center" style="gap:14px;margin-bottom:12px"><span class="num" style="background:var(--red)">1</span><div class="h" style="margin:0">Смерть мозга</div></div>
+          <div class="t">Думает агент — перестаёшь думать ты.</div>
+          <div class="t">Палец на Enter и надежда, что выпадет.</div>
+        </div>
+        <div class="card bad">
+          <div class="row center" style="gap:14px;margin-bottom:12px"><span class="num" style="background:var(--red)">2</span><div class="h" style="margin:0">Смерть кошелька</div></div>
+          <div class="t">Что бесплатно делает школьник, то и стоит бесплатно.</div>
+          <div class="t">Не заработать ничего, кроме выгорания.</div>
+        </div>
+        <div class="card bad">
+          <div class="row center" style="gap:14px;margin-bottom:12px"><span class="num" style="background:var(--red)">3</span><div class="h" style="margin:0">Смерть проекта</div></div>
+          <div class="t">Датчик — глаз человека. Он не видит:</div>
+          <ul class="l" style="margin-top:0"><li>тихих ошибок</li><li>отложенных эффектов</li><li>расползания архитектуры</li></ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="h" style="font-size:21px">Нагляднее всего — бот поддержки по вайбу</div>
+        <div class="row" style="flex-wrap:wrap;gap:10px">
+          <span class="chip code">выдумывает факты</span><span class="chip code">теряет вопрос из длинного запроса</span><span class="chip code">нет доступа к данным</span><span class="chip code">всё время зовёт человека</span>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>На коротком отрезке глаза хватает, <b>на длинном ошибки копятся</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 -->
+<section id="social" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Смерть № 4, бонусная</div>
+      <div class="title" style="margin-top:8px">Социальные последствия</div>
+      <div class="sub">Вчера, пока готовил эту презентацию, мы с девушкой чуть не поссорились</div>
+    </div>
+    <div class="body" style="justify-content:center;gap:26px">
+      <div class="row" style="gap:28px;align-items:stretch">
+        <div class="glass grow" style="padding:28px 30px">
+          <div class="tag">Я</div>
+          <div style="font-size:36px;font-weight:650;line-height:1.2">🎤 «Сейчас я говорю со своим Клодом!»</div>
+        </div>
+        <div style="display:flex;align-items:center;font-size:44px;font-weight:700;color:#FF6B8A">vs</div>
+        <div class="glass grow" style="padding:28px 30px">
+          <div class="tag">Девушка</div>
+          <div style="font-size:36px;font-weight:650;line-height:1.2">🎤 «Нет, я со своим!»</div>
+        </div>
+      </div>
+      <div class="row center" style="justify-content:center;gap:14px">
+        <span class="chip w" style="font-size:18px">атрофия мышления</span>
+        <span class="chip w" style="font-size:18px">высокая конкуренция</span>
+        <span class="chip red" style="font-size:18px">🎤 конкуренция за эфир</span>
+      </div>
+    </div>
+    <div class="tip"><svg><use href="#bulb"/></svg>Агентов два, а комната одна: <b>высокая конкуренция начинается дома</b></div>
+  </div>
+</section>
+
+<!-- 17 -->
+<section id="why-death" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Почему это смерть: навык, доступный каждому</div>
+      <div class="sub">Сайт за 200 рублей продаётся, пока остальные не знают и инструменты не пошли в массы</div>
+    </div>
+    <div class="body" style="gap:26px;justify-content:center">
+      <div class="row center" style="gap:16px">
+        <div class="glass grow" style="padding:26px 30px"><div class="tag">доступно каждому — не продашь</div><div class="h" style="margin:0;font-size:36px">Поиск в Google и Яндексе</div></div>
+        <span class="ar" style="font-size:34px">→</span>
+        <div class="glass hl grow" style="padding:26px 30px"><div class="tag">всё ещё продаётся</div><div class="h" style="margin:0;font-size:36px">OSINT</div></div>
+      </div>
+      <div class="row center" style="gap:16px">
+        <div class="glass bad grow" style="padding:26px 30px"><div class="tag">доступно каждому — не продашь</div><div class="h" style="margin:0;font-size:36px">Вайбкод</div></div>
+        <span class="ar" style="font-size:34px">→</span>
+        <div class="glass hl grow" style="padding:26px 30px"><div class="tag">всё ещё можно заработать</div><div class="h" style="margin:0;font-size:36px">AI-assisted engineering</div></div>
+      </div>
+      <div class="t" style="text-align:center;font-size:21px;opacity:.9">Те же методы, но системно, изощрённо, виртуозно — с сопоставлением и анализом</div>
+    </div>
+    <div class="tip"><svg><use href="#bulb"/></svg>AI-assisted engineering — <b>следующий пункт, к нему и надо стремиться</b></div>
+  </div>
+</section>
+
+<!-- 18 -->
+<section id="purgatory" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="kicker" style="color:var(--ind-t)">Чистилище: между смертью и жизнью после смерти</div>
+      <div class="title" style="margin-top:6px">Spec-driven development: полувайбкод</div>
+      <div class="sub">Вы встали на путь истинный — но это только начало. Вайб просто переехал из чата в документы</div>
+    </div>
+    <div class="body">
+      <div class="row grow">
+        <div style="width:400px;display:flex;flex-direction:column;gap:16px">
+          <div class="card"><div class="h" style="font-size:21px">Что даёт</div><div class="t">автономность, чёткие требования, покрытие тестами, качество</div></div>
+          <div class="card bad grow"><div class="h" style="font-size:21px">Что ломается</div><div class="t">агент понимает спеку по-своему; спеки расходятся с кодом и друг с другом; новая частично заменяет десяток старых</div></div>
+        </div>
+        <div class="card grow" style="background:#fff;padding:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+          <img src="2026-10-26-граф-спек.svg" alt="Граф спек" style="max-width:100%;max-height:300px;display:block">
+          <div class="row" style="gap:8px;flex-wrap:wrap;justify-content:center">
+            <span class="chip llm">~90 ADR</span><span class="chip llm">86 с «заменяет»</span><span class="chip llm">15 документов в шапке одной спеки</span>
+          </div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg><b>SDD умер.</b> Те, кто продолжит, умрут под тоннами разъехавшихся спек. Что придёт на смену — расскажу дальше</div>
+    </div>
+  </div>
+</section>
+
+<!-- 19 -->
+<section id="mature" class="slide dark">
+  <div class="wrap" style="gap:22px">
+    <div>
+      <div class="title">Агент — не магия, а инструмент</div>
+      <div class="sub">Сложный, как фотошоп или автокад: его осваивают, а не ждут чуда. Зрелость — с пятого уровня, где тесты становятся оракулом</div>
+    </div>
+    <div class="body" style="gap:16px">
+      <div class="tag" style="margin:0">Как работает оракул — проверка, которую агент не может подогнать под себя</div>
+      <div class="row" style="gap:10px;align-items:stretch">
+        <div class="glass grow" style="padding:14px 16px"><div class="tag">1</div><div class="t">Берём требование из спеки</div></div><span class="ar" style="align-self:center">→</span>
+        <div class="glass grow" style="padding:14px 16px"><div class="tag">2</div><div class="t">Пишем сценарий Given / When / Then</div></div><span class="ar" style="align-self:center">→</span>
+        <div class="glass grow" style="padding:14px 16px"><div class="tag">3</div><div class="t">Тест красный: кода ещё нет</div></div><span class="ar" style="align-self:center">→</span>
+        <div class="glass hl grow" style="padding:14px 16px"><div class="tag">4</div><div class="t">Человек утверждает красный сценарий</div></div><span class="ar" style="align-self:center">→</span>
+        <div class="glass grow" style="padding:14px 16px"><div class="tag">5</div><div class="t">Отдельная сессия доводит до зелёного</div></div>
+      </div>
+      <div class="g3 grow">
+        <div class="glass"><div class="h">Оракул под замком</div><div class="t">Сценарии и тесты агенту не трогать: их стерегут хук, CODEOWNERS и CI. Ослабил тест — сборка упала.</div></div>
+        <div class="glass"><div class="h">Оракул под проверкой</div><div class="t">Нарочно подсаживаем баги и смотрим, поймают ли их тесты.</div></div>
+        <div class="glass"><div class="h">Всё прослеживается</div><div class="t">Намерение → спека → план → задачи → тест → код. У каждого требования есть свой тест.</div></div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Процесс строим сразу AI-native: <b>спеку четвёртого уровня читают, спеку пятого — запускают</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 20 -->
+<section id="generator" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Инженерим не код, а генератор кода</div>
+      <div class="sub">Жизнь после смерти — AI-assisted разработка. Код и сейчас кривой, и я его почти не читаю</div>
+    </div>
+    <div class="body">
+      <div class="g2">
+        <div class="card"><div class="tag" style="color:var(--muted)">прошлый век</div><div class="h" style="margin:0;font-size:28px;text-decoration:line-through;text-decoration-color:#E5486B;text-decoration-thickness:3px">Читать код</div></div>
+        <div class="card fill"><div class="tag">теперь</div><div class="h" style="margin:0;font-size:28px">Ревьюить метод, которым агент написал код</div></div>
+      </div>
+      <div class="row center grow" style="gap:18px">
+        <div class="card bad grow" style="padding:20px 24px">
+          <div class="tag" style="color:#A3223F">голая нейросеть</div>
+          <div class="h" style="font-size:24px">Наиболее вероятный токен вслед за предыдущим</div>
+          <div class="t">Всё ещё плохой генератор кода для рабочих проектов</div>
+        </div>
+        <span class="ar" style="font-size:40px">+</span>
+        <div class="card grow" style="padding:20px 24px;border:2px solid var(--ind)">
+          <div class="tag" style="color:var(--ind-t)">нужно что-то большее</div>
+          <div class="h" style="font-size:24px">Система вокруг агента</div>
+          <div class="t">Знания, детерминизм, проверки</div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Мы инженерим не сам код, а <b>генератор кода</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 21 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">«Доверие — свойство системы, а не модели»</div>
+      <div class="sub">То самое «большее» — в системе вокруг агента</div>
+    </div>
+    <div class="body">
+      <div class="g2">
+        <div class="card bad"><div class="tag" style="color:#A3223F">Вайбкод держится на</div><div class="h" style="margin:0">глазе, везении и вайбе чуда</div></div>
+        <div class="card fill"><div class="tag">AI-assisted держится на</div><div class="h" style="margin:0">выверенной инженерной системе: знания, детерминизм, проверки</div></div>
+      </div>
+      <svg viewBox="0 0 900 300" style="width:100%;flex:1;min-height:0" font-family="inherit">
+        <defs><marker id="mc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5B4BEA"/></marker></defs>
+        <g fill="none" stroke="#5B4BEA" stroke-width="3.5" marker-end="url(#mc)">
+          <path d="M545 40 Q 770 40 782 116"/>
+          <path d="M782 184 Q 770 262 545 262"/>
+          <path d="M355 262 Q 130 262 118 184"/>
+          <path d="M118 116 Q 130 40 355 40"/>
+        </g>
+        <rect x="355" y="10" width="190" height="60" rx="14" fill="#5B4BEA" stroke="#5B4BEA" stroke-width="1.5"/><text x="450" y="36" text-anchor="middle" font-size="21" font-weight="700" fill="#fff">Агент</text><text x="450" y="59" text-anchor="middle" font-size="16" fill="#E4E0FF">выбор действия</text>
+        <rect x="685" y="120" width="190" height="60" rx="14" fill="#F4F2FF" stroke="#E4E0FF" stroke-width="1.5"/><text x="780" y="146" text-anchor="middle" font-size="21" font-weight="700" fill="#24213F">Действие</text><text x="780" y="169" text-anchor="middle" font-size="16" fill="#615D85">тулы, скрипт</text>
+        <rect x="355" y="232" width="190" height="60" rx="14" fill="#F4F2FF" stroke="#E4E0FF" stroke-width="1.5"/><text x="450" y="258" text-anchor="middle" font-size="21" font-weight="700" fill="#24213F">Среда</text><text x="450" y="281" text-anchor="middle" font-size="16" fill="#615D85">стенд, прод, мир</text>
+        <rect x="25" y="120" width="190" height="60" rx="14" fill="#DDF5EF" stroke="#22B59A" stroke-width="1.5"/><text x="120" y="146" text-anchor="middle" font-size="21" font-weight="700" fill="#24213F">Измерение</text><text x="120" y="169" text-anchor="middle" font-size="16" fill="#615D85">тесты, метрики, логи</text>
+        <text x="450" y="140" text-anchor="middle" font-size="15" font-weight="600" fill="#4B3BDB" letter-spacing="1.5">АГЕНТ ПО РАССЕЛУ И НОРВИГУ, 1995</text>
+        <text x="450" y="172" text-anchor="middle" font-size="26" font-weight="700" fill="#24213F">сделать → измерить ↺</text>
+      </svg>
+      <div class="tip"><svg><use href="#bulb"/></svg>Вайбкод — тот же цикл с плохим датчиком. В AI-assisted датчик — <b>среда: тесты, линтеры, метрики CI</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 22 -->
+<section id="sensors" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Один цикл, разные датчики</div>
+      <div class="sub">Помните «нет, не так»? Цикл тот же — меняется датчик, а потом добавляются знания</div>
+    </div>
+    <div class="body">
+      <svg viewBox="10 56 1470 372" style="width:100%;flex:1;min-height:0" font-family="inherit">
+        <defs>
+          <marker id="mo2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#E08A16"/></marker>
+          <marker id="mg2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22B59A"/></marker>
+          <marker id="mi2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#5B4BEA"/></marker>
+        </defs>
+        <g font-size="19" fill="#615D85">
+          <rect x="20" y="60" width="470" height="360" rx="16" fill="#F4F2FF" stroke="#E4E0FF"/>
+          <text x="255" y="94" font-size="23" font-weight="700" text-anchor="middle" fill="#4B3BDB">Вайбкод: датчик — человек</text>
+          <circle cx="60" cy="330" r="8" fill="#24213F"/><text x="40" y="362">«сделай лендинг»</text>
+          <circle cx="420" cy="140" r="30" fill="#FFF1DC" stroke="#F2A33A" stroke-width="2"/><circle cx="420" cy="140" r="5" fill="#E08A16"/><text x="420" y="194" text-anchor="middle" fill="#B5650A" font-weight="600">«ок, норм»</text>
+          <polyline points="60,330 180,290 140,220 270,205 300,160 392,145" fill="none" stroke="#E08A16" stroke-width="3.5" marker-end="url(#mo2)"/>
+          <g fill="#fff" stroke="#E08A16" stroke-width="3"><circle cx="180" cy="290" r="7"/><circle cx="140" cy="220" r="7"/><circle cx="270" cy="205" r="7"/><circle cx="300" cy="160" r="7"/></g>
+          <text x="196" y="308">«нет, не так»</text>
+          <text x="32" y="200">«кнопку больше»</text>
+          <text x="282" y="232">«почти»</text>
+          <text x="286" y="150" text-anchor="end">«ещё чуть-чуть»</text>
+          <text x="255" y="396" text-anchor="middle" font-size="17">измеряет глаз человека:</text>
+          <text x="255" y="414" text-anchor="middle" font-size="17">видно только то, что на экране</text>
+
+          <rect x="510" y="60" width="470" height="360" rx="16" fill="#F4F2FF" stroke="#E4E0FF"/>
+          <text x="745" y="94" font-size="23" font-weight="700" text-anchor="middle" fill="#4B3BDB">Зрелый: датчик — среда</text>
+          <circle cx="550" cy="330" r="8" fill="#24213F"/><text x="536" y="362">задача</text>
+          <circle cx="910" cy="140" r="30" fill="#DDF5EF" stroke="#22B59A" stroke-width="2"/><circle cx="910" cy="140" r="5" fill="#22B59A"/><text x="898" y="194" text-anchor="middle" fill="#14866F" font-weight="600">тесты и метрики</text><text x="898" y="214" text-anchor="middle" fill="#14866F" font-weight="600">зелёные</text>
+          <polyline points="550,330 670,290 630,220 760,205 790,160 882,145" fill="none" stroke="#22B59A" stroke-width="3.5" marker-end="url(#mg2)"/>
+          <g fill="#fff" stroke="#22B59A" stroke-width="3"><circle cx="670" cy="290" r="7"/><circle cx="630" cy="220" r="7"/><circle cx="760" cy="205" r="7"/><circle cx="790" cy="160" r="7"/></g>
+          <text x="686" y="308">тесты ✕</text>
+          <text x="522" y="200">метрика ↓, откат</text>
+          <text x="772" y="232">тесты ✓</text>
+          <text x="776" y="150" text-anchor="end">инвариант ✓</text>
+          <rect x="790" y="252" width="182" height="90" rx="12" fill="#5B4BEA"/>
+          <text x="881" y="276" font-size="17" font-weight="700" text-anchor="middle" fill="#fff">человек</text>
+          <text x="881" y="297" font-size="15" text-anchor="middle" fill="#fff">архитектура,</text>
+          <text x="881" y="315" font-size="15" text-anchor="middle" fill="#fff">тест-кейсы,</text>
+          <text x="881" y="333" font-size="15" text-anchor="middle" fill="#fff" dy="-1">ключевые решения</text>
+          <text x="745" y="396" text-anchor="middle" font-size="17">измеряют тесты, метрики, откаты;</text>
+          <text x="745" y="414" text-anchor="middle" font-size="17">человек — там, где без него нельзя</text>
+
+          <rect x="1000" y="60" width="470" height="360" rx="16" fill="#EEEBFF" stroke="#5B4BEA" stroke-width="2"/>
+          <text x="1235" y="94" font-size="23" font-weight="700" text-anchor="middle" fill="#4B3BDB">Ещё зрелее: + знания</text>
+          <circle cx="1040" cy="330" r="8" fill="#24213F"/><text x="1026" y="362">задача</text>
+          <circle cx="1400" cy="140" r="30" fill="#DDF5EF" stroke="#22B59A" stroke-width="2"/><circle cx="1400" cy="140" r="5" fill="#22B59A"/>
+          <polyline points="1040,330 1140,282 1230,224 1310,180 1372,148" fill="none" stroke="#5B4BEA" stroke-width="3.5" marker-end="url(#mi2)"/>
+          <g fill="#fff" stroke="#5B4BEA" stroke-width="3"><circle cx="1140" cy="282" r="7"/><circle cx="1230" cy="224" r="7"/><circle cx="1310" cy="180" r="7"/></g>
+          <text x="1126" y="270" text-anchor="end">тесты ✓</text>
+          <text x="1216" y="212" text-anchor="end">инвариант ✓</text>
+          <text x="1400" y="200" text-anchor="middle" fill="#14866F" font-weight="600">меньше</text><text x="1400" y="220" text-anchor="middle" fill="#14866F" font-weight="600">блужданий</text>
+          <g font-size="16" font-weight="600" fill="#4B3BDB">
+            <rect x="1290" y="246" width="164" height="32" rx="9" fill="#fff" stroke="#5B4BEA"/><text x="1372" y="268" text-anchor="middle">документация</text>
+            <rect x="1290" y="284" width="164" height="32" rx="9" fill="#fff" stroke="#5B4BEA"/><text x="1372" y="306" text-anchor="middle">ADR и спеки</text>
+            <rect x="1290" y="322" width="164" height="32" rx="9" fill="#fff" stroke="#5B4BEA"/><text x="1372" y="344" text-anchor="middle">знания о проекте</text>
+          </g>
+          <path d="M1290 262 L1240 232 M1290 300 L1150 290" stroke="#5B4BEA" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+          <text x="1235" y="396" text-anchor="middle" font-size="17">направление задают внедрённые знания:</text>
+          <text x="1235" y="414" text-anchor="middle" font-size="17">агент работает не вслепую</text>
+        </g>
+      </svg>
+      <div class="tip"><svg><use href="#bulb"/></svg>Датчик говорит, где ошибка, а знания — куда идти. <b>Это эволюция вайбкода, а не его отрицание</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 23 -->
+<section id="lego" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Лего следующего порядка</div>
+      <div class="sub">«Скоро все обвязки будут из коробки» — возможно. Но появятся задачи более высокого порядка</div>
+    </div>
+    <div class="body" style="gap:18px">
+      <div class="row grow" style="gap:14px;align-items:stretch">
+        <div class="card" style="flex:1"><span class="num">1</span><div class="h" style="margin-top:14px">100 кубиков</div><div class="t">Конструкции собирают руками</div></div>
+        <span class="ar" style="align-self:center">→</span>
+        <div class="card" style="flex:1"><span class="num">2</span><div class="h" style="margin-top:14px">Роботы: Claude Code, Codex</div><div class="t">Собирают такие конструкции сами и очень быстро</div></div>
+        <span class="ar" style="align-self:center">→</span>
+        <div class="card fill" style="flex:1.15"><span class="num" style="background:#fff;color:var(--ind-t)">3</span><div class="h" style="margin-top:14px">100 конструкций × 100 кубиков</div><div class="t">10 000 кубиков — большие мощные системы. Это всё ещё может только человек</div></div>
+      </div>
+      <div class="card bad" style="padding:18px 24px">
+        <div class="t" style="font-size:21px">У нейросети нет воли и ненасытного голода: <b>дали много — дайте очень много, дали очень много — дайте ещё</b>. Потребность создавать новое исходит от человека.</div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Не застревать на поделках: <b>год за годом масштабировать мышление</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 24 -->
+<section id="fork" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Куда дальше?</div>
+      <div class="sub">Что-то из этого станет темой нового доклада — в зависимости от того, что интересно вам</div>
+    </div>
+    <div class="body" style="gap:20px">
+      <a class="glass hl lnk" href="#transform">
+        <div class="tag">Трансформация агента <span class="more">подробнее →</span></div>
+        <div class="row center" style="gap:10px;margin-top:6px">
+          <span class="chip wl" style="font-size:18px">агент как инструмент</span><span class="ar">→</span>
+          <span class="chip wl" style="font-size:18px">агент как сотрудник · AI Native</span><span class="ar">→</span>
+          <span class="chip wl" style="font-size:18px">агент как инфра · Company brain / Personal OS</span>
+        </div>
+      </a>
+      <div class="g5 grow">
+        <a class="glass lnk" href="#mature"><span class="num sm">1</span><div class="h" style="margin-top:14px">Продвинутая агентная разработка</div><div class="t">Подробности: как это устроено изнутри</div><div class="more" style="margin-top:auto;padding-top:12px">подробнее →</div></a>
+        <a class="glass lnk" href="#personal-os"><span class="num sm">2</span><div class="h" style="margin-top:14px">Личный ассистент</div><div class="t">Personal OS: секретарь и коуч</div><div class="more" style="margin-top:auto;padding-top:12px">подробнее →</div></a>
+        <a class="glass lnk" href="#support"><span class="num sm">3</span><div class="h" style="margin-top:14px">Автоматизация поддержки</div><div class="t">supagent: тикеты, ревью по трейсам, ночные фиксы</div><div class="more" style="margin-top:auto;padding-top:12px">подробнее →</div></a>
+        <a class="glass lnk" href="#infraops"><span class="num sm">4</span><div class="h" style="margin-top:14px">AI InfraOps</div><div class="t">Агенты в инфраструктуре и эксплуатации</div><div class="more" style="margin-top:auto;padding-top:12px">подробнее →</div></a>
+        <a class="glass lnk" href="#science"><span class="num sm">5</span><div class="h" style="margin-top:14px">AI for Science</div><div class="t">Агенты в научной работе</div><div class="more" style="margin-top:auto;padding-top:12px">подробнее →</div></a>
+      </div>
+      <div class="row center" style="justify-content:center"><span class="pill">Что интереснее? Голосуйте после доклада</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 25 -->
+<section class="slide dark">
+  <div class="wrap" style="justify-content:center;align-items:center;text-align:center">
+    <div style="font-size:40px;font-weight:500;opacity:.75">Вайбкод — это смерть.</div>
+    <div style="font-size:66px;font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-top:6px">Жизнь после неё начинается,<br>когда снова включаешь голову</div>
+    <div style="margin-top:30px"><span class="pill" style="font-size:24px;padding:14px 30px">Всем спасибо за внимание и за вайбовую атмосферу!</span></div>
+  </div>
+</section>
+
+<!-- 26 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Что почитать и посмотреть</div>
+      <div class="sub">Источники для самостоятельного изучения</div>
+    </div>
+    <div class="body" style="justify-content:center">
+      <div class="g3">
+        <div class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;min-height:230px">
+          <div class="tag" style="color:var(--ind-t)">Сайт</div>
+          <div class="h" style="font-size:34px">developertoolkit.ai</div>
+        </div>
+        <div class="card fill" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;min-height:230px">
+          <div class="tag">Конференция</div>
+          <div class="h" style="font-size:34px">AI DEV Live</div>
+          <div style="margin-top:auto"><span class="chip red">идёт прямо сейчас</span></div>
+        </div>
+        <div class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;min-height:230px">
+          <div class="tag" style="color:var(--ind-t)">Telegram-канал</div>
+          <div class="h" style="font-size:34px">LLM под капотом</div>
+          <div class="small" style="margin-top:auto;color:var(--muted);opacity:1">t.me/llm_under_hood</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 27 -->
+<section id="support" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">supagent: агенты делают почти всё, но не по вайбу</div>
+      <div class="sub">От тикета до ночного фикса</div>
+    </div>
+    <div class="body">
+      <div class="row center grow" style="gap:8px">
+        <div class="glass grow" style="padding:18px"><div class="tag">данные</div><div class="h" style="font-size:21px">Тикет</div><div class="t" style="font-size:17px">от клиента</div></div><span class="ar" style="font-size:24px">→</span>
+        <div class="glass hl grow" style="padding:18px"><div class="tag">агент</div><div class="h" style="font-size:21px">supagent</div><div class="t" style="font-size:17px">отвечает на тикет</div></div><span class="ar" style="font-size:24px">→</span>
+        <div class="glass hl grow" style="padding:18px"><div class="tag">агент</div><div class="h" style="font-size:21px">Cursor</div><div class="t" style="font-size:17px">ревьюит по трейсам</div></div><span class="ar" style="font-size:24px">→</span>
+        <div class="glass grow" style="padding:18px"><div class="tag">данные</div><div class="h" style="font-size:21px">Баг</div><div class="t" style="font-size:17px">→ карточка сама</div></div><span class="ar" style="font-size:24px">→</span>
+        <div class="glass grow" style="padding:18px;border:2px solid var(--amber)"><div class="tag" style="color:#FFC56E;opacity:1">человек</div><div class="h" style="font-size:21px">Человек</div><div class="t" style="font-size:17px">подтверждает</div></div><span class="ar" style="font-size:24px">→</span>
+        <div class="glass hl grow" style="padding:18px"><div class="tag">агент</div><div class="h" style="font-size:21px">Claude</div><div class="t" style="font-size:17px">ночью фиксит</div></div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Внимание инженера ушло из написания кода <b>в среду, верификацию и супервайзинг</b></div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 28 -->
+<section id="infraops" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">За пределами разработки: стенд и откат</div>
+      <div class="sub">В инфраструктуре среда даёт датчики сама: метрики, логи, состояние сервисов</div>
+    </div>
+    <div class="body">
+      <div class="g3">
+        <div class="glass" style="padding:16px 20px"><div class="h" style="font-size:21px;margin-bottom:4px">Саппорт</div><div class="small">на смену графам на LangChain</div></div>
+        <div class="glass hl" style="padding:16px 20px"><div class="h" style="font-size:21px;margin-bottom:4px">Инфра-опс</div><div class="small">конфиги, стенд, откат, бэкап</div></div>
+        <div class="glass" style="padding:16px 20px"><div class="h" style="font-size:21px;margin-bottom:4px">Личный ассистент</div><div class="small">деньги, задачи, расчёты</div></div>
+      </div>
+      <div class="row center grow" style="gap:12px">
+        <div class="glass hl" style="width:210px"><div class="tag">Агент</div><div class="t">один тул: исполнить Python-скрипт</div></div>
+        <span class="ar">→</span>
+        <div class="glass" style="width:220px"><div class="tag">apply.py</div><div class="t">меняет параметр в конфиге PostgreSQL</div></div>
+        <span class="ar">→</span>
+        <div class="glass" style="width:150px"><div class="tag">Метрики</div><div class="t">стенд или прод</div></div>
+        <span class="ar">→</span>
+        <div class="grow" style="display:flex;flex-direction:column;gap:10px">
+          <div class="glass" style="padding:12px 16px;background:rgba(94,234,212,.16);border-color:rgba(94,234,212,.5)"><div class="t"><b>В норме</b> — оставляем</div></div>
+          <div class="glass bad" style="padding:12px 16px"><div class="t"><b>Красная зона</b> — rollback.py: <b>автоматика, а не модель</b></div></div>
+          <div class="small">Прод: сначала бэкап. Артефакт — проверенные скрипты</div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>С хуками и границами тулов за почти год <b>агенты ошибаются в инфраструктуре реже, чем я руками</b></div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 29 -->
+<section id="personal-os" class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Personal OS: секретарь, которого я написал сам</div>
+      <div class="sub">Облачный агент в Cursor со своим репозиторием; говорит со мной через Telegram, голосом или текстом</div>
+    </div>
+    <div class="body">
+      <div class="row center" style="gap:10px">
+        <span class="chip code">Я: голос или текст</span><span class="ar" style="font-size:22px">⇄</span>
+        <span class="chip code">Telegram-реле</span><span class="ar" style="font-size:22px">⇄</span>
+        <span class="chip llm">Cursor Cloud: секретарь + коуч</span><span class="ar" style="font-size:22px">⇄</span>
+        <span class="chip code">Notion · Econumo (MCP) · git</span>
+      </div>
+      <div class="row grow">
+        <div class="card" style="flex:1.1;padding:16px 18px">
+          <div class="chat">
+            <div class="msg bot"><span class="who">Секретарь</span>Утро. Кандидаты на фокус: 1. Черновик доклада, 2. Разобрать почту.<span class="tm">09:00</span></div>
+            <div class="msg me">🎤 Беру первую, месяц вечером<span class="tm">09:00</span></div>
+            <div class="msg me">Потратил 112 на обед<span class="tm">13:42</span></div>
+            <div class="msg bot">Записал: 112, Еда. Еда выше темпа: 112 при темпе 100.<span class="tm">13:42</span></div>
+          </div>
+        </div>
+        <div class="card" style="flex:1">
+          <div class="h" style="font-size:21px">Деньги</div>
+          <ul class="l" style="margin-top:-6px">
+            <li>Econumo на своём сервере, история за семь лет</li>
+            <li>Выписки забирает сам и раскладывает по категориям</li>
+            <li>Мне — только спорные: наличка, переводы</li>
+            <li>Запись — детерминированным тулом</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Свои данные на своих серверах; <b>агент пишет только через детерминированные тулы</b></div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 30 -->
+<section class="slide dark">
+  <div class="wrap" style="gap:22px">
+    <div>
+      <div class="title">Задачи и план месяца</div>
+      <div class="sub">Направление → цель → проект → задача → подзадача. Задачу ставлю одной фразой, обычно голосом</div>
+    </div>
+    <div class="body" style="gap:18px">
+      <div class="g3 grow">
+        <div class="glass">
+          <div class="h" style="font-size:21px">Задачи и день</div>
+          <div class="chat" style="margin-bottom:10px">
+            <div class="msg me" style="max-width:100%">🎤 Заведи созвон с клиентом на следующую неделю</div>
+          </div>
+          <div class="t" style="font-size:17px">Проект, родителя и горизонт выводит сам. В 9:00 — бриф, вечером — что сделано.</div>
+        </div>
+        <div class="glass">
+          <div class="h" style="font-size:21px">План месяца</div>
+          <div class="t" style="font-size:17px">По каждой карточке — одно из пяти решений: оставить, нарезать, сдвинуть, снять, отложить.</div>
+          <div class="t" style="font-size:17px">Заполненность против прошлого месяца: ±10%.</div>
+        </div>
+        <div class="glass hl">
+          <div class="h" style="font-size:21px">Два апрува</div>
+          <div class="t" style="font-size:17px">Агент — по чек-листу и не при открытом замечании, даже если прошу «апрувни».</div>
+          <div class="t" style="font-size:17px">Я — явной фразой. Правка после апрува снимает оба.</div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Октябрь: 17 карточек — 11 оставили, 3 нарезали, 3 сдвинули. <b>Закрыт на второй день</b></div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 31 -->
+<section class="slide light">
+  <div class="wrap">
+    <div>
+      <div class="title">Коуч: та версия меня, которую я хочу растить</div>
+      <div class="sub">Killer feature: агент меня усиливает</div>
+    </div>
+    <div class="body">
+      <div class="row grow center" style="gap:24px">
+        <div class="card" style="flex:1">
+          <div class="tag" style="color:var(--ind-t)">За рулём по очереди</div>
+          <div class="row" style="flex-wrap:wrap;gap:10px;margin:8px 0 14px">
+            <span class="chip ghost" style="font-size:19px">«стараюсь»</span><span class="chip ghost" style="font-size:19px">«срываюсь»</span><span class="chip ghost" style="font-size:19px">«ленюсь»</span><span class="chip ghost" style="font-size:19px">«озарение»</span>
+          </div>
+          <div class="t">Нет одного постоянного «я»: за руль садятся разные части мозга.</div>
+          <div class="small" style="margin-top:12px;color:var(--muted);opacity:1">Гурджиев: множество маленьких «я» · Канеман: быстрая и медленная системы · Минский: «общество разума»</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;align-items:center;width:150px;text-align:center;color:var(--muted)">
+          <div class="small" style="opacity:1">переношу принципы сильной части</div>
+          <div class="ar">⇄</div>
+          <div class="small" style="opacity:1">напоминает, когда за рулём другая</div>
+        </div>
+        <div class="card fill" style="flex:0.9">
+          <div class="h">Коуч</div>
+          <div class="t">Мои принципы и установки, заложенные мной. Советует, но не решает.</div>
+          <div class="t">Усиливает сильные стороны, ослабляет слабые.</div>
+        </div>
+      </div>
+      <div class="tip"><svg><use href="#bulb"/></svg>Агент — <b>внешний носитель той версии меня, которую я хочу растить</b></div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 32 -->
+<section id="transform" class="slide dark">
+  <div class="wrap">
+    <div>
+      <div class="title">Трансформация агента</div>
+      <div class="sub">Ветка развилки · подробно — в следующем докладе</div>
+    </div>
+    <div class="body" style="justify-content:center">
+      <div class="row" style="gap:18px;align-items:stretch">
+        <div class="glass grow" style="padding:30px 28px"><span class="num">1</span><div class="h" style="font-size:30px;margin-top:18px">Агент как инструмент</div></div>
+        <span class="ar" style="align-self:center">→</span>
+        <div class="glass grow" style="padding:30px 28px"><span class="num">2</span><div class="h" style="font-size:30px;margin-top:18px">Агент как сотрудник</div><div class="t">AI Native</div></div>
+        <span class="ar" style="align-self:center">→</span>
+        <div class="glass hl grow" style="padding:30px 28px"><span class="num">3</span><div class="h" style="font-size:30px;margin-top:18px">Агент как инфра</div><div class="t">Company brain / Personal OS</div></div>
+      </div>
+    </div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+
+<!-- 33 -->
+<section id="science" class="slide light">
+  <div class="wrap" style="justify-content:center">
+    <div class="tag" style="color:var(--ind-t)">Ветка развилки</div>
+    <div class="title" style="font-size:64px">AI for Science</div>
+    <div class="sub" style="font-size:26px;margin-top:10px">Агенты в научной работе</div>
+    <div style="margin-top:36px"><span class="pill">Подробно — в следующем докладе</span></div>
+  </div>
+  <a class="back" href="#fork">← куда дальше</a>
+</section>
+</div>
+<div class="hud">← → листать · F полный экран</div>
+
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide'));
+  var n=slides.length, cur=0;
+  slides.forEach(function(s,i){var p=document.createElement('div');p.className='pg';p.textContent=(i+1)+' / '+n;s.appendChild(p);});
+  function fit(){var k=Math.min(innerWidth/1280,innerHeight/720);slides.forEach(function(s){s.style.transform='scale('+k+')';});}
+  function go(i){cur=Math.max(0,Math.min(n-1,i));slides.forEach(function(s,j){s.classList.toggle('active',j===cur);});if(location.hash!=='#'+(cur+1))history.replaceState(null,'','#'+(cur+1));}
+  addEventListener('resize',fit);
+  addEventListener('keydown',function(e){
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>=0){e.preventDefault();go(cur+1);}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>=0){e.preventDefault();go(cur-1);}
+    else if(e.key==='Home')go(0);else if(e.key==='End')go(n-1);
+    else if(e.key==='f'||e.key==='F'||e.key==='а'||e.key==='А'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+  });
+  document.getElementById('deck').addEventListener('click',function(e){if(e.target.closest('a'))return;go(e.clientX<innerWidth/3?cur-1:cur+1);});
+  function fromHash(){var k=location.hash.slice(1),h=parseInt(k,10);if(h)return h-1;var el=k&&document.getElementById(k);return el?slides.indexOf(el):-1;}
+  addEventListener('hashchange',function(){var i=fromHash();if(i>=0)go(i);});
+  setTimeout(function(){var h=document.querySelector('.hud');if(h)h.style.display='none';},4000);
+  fit();go(Math.max(0,fromHash()));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Агенту дают не один шанс, а стенд и откат</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">В инфраструктуре среда даёт датчики сама: метрики, логи, состояние сервисов</text>
+<rect x="64" y="250" width="200" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="164.0" y="291.8" font-size="26" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Агент</text>
+<text x="164.0" y="321.0" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">один тул:</text>
+<text x="164.0" y="347.6" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Python-скрипт</text>
+<line x1="268" y1="310" x2="326" y2="310" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="330" y="250" width="270" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="465.0" y="291.1" font-size="24" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">apply.py</text>
+<text x="465.0" y="319.6" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">меняет параметр</text>
+<text x="465.0" y="346.2" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">в конфиге PostgreSQL</text>
+<line x1="604" y1="310" x2="656" y2="310" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="660" y="250" width="200" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="760.0" y="304.4" font-size="24" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Метрики</text>
+<text x="760.0" y="332.9" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">стенд или прод</text>
+<line x1="864" y1="290" x2="916" y2="245" stroke="#22C55E" stroke-width="2.5" marker-end="url(#g)"/>
+<line x1="864" y1="330" x2="916" y2="380" stroke="#EF4444" stroke-width="2.5" marker-end="url(#r)"/>
+<rect x="920" y="190" width="296" height="100" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="1068.0" y="234.4" font-size="24" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">В норме</text>
+<text x="1068.0" y="262.9" font-size="19" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">оставляем</text>
+<rect x="920" y="320" width="296" height="130" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="1068.0" y="366.1" font-size="24" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Красная зона</text>
+<text x="1068.0" y="394.6" font-size="19" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">rollback.py откатывает:</text>
+<text x="1068.0" y="421.2" font-size="19" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">автоматика, а не модель</text>
+<rect x="64" y="490" width="564" height="110" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+<text x="346.0" y="538.1" font-size="22" font-weight="700" fill="#78350F" text-anchor="middle" xml:space="preserve">Прод: сначала бэкап</text>
+<text x="346.0" y="566.8" font-size="20" font-weight="400" fill="#78350F" text-anchor="middle" xml:space="preserve">перед любой правкой</text>
+<rect x="652" y="490" width="564" height="110" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="934.0" y="538.1" font-size="22" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Артефакт — сами скрипты</text>
+<text x="934.0" y="566.8" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">уже проверенные на живой среде</text>
+<text x="640" y="664" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">За почти год агенты ошибаются в инфраструктуре реже, чем я руками</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker>
+<marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#16A34A"/></marker>
+</defs>
+<rect width="1000" height="440" fill="#fff"/>
+<text x="30" y="36" font-size="20" font-weight="700" fill="#0F172A">Один цикл, разные датчики: от вайбкода к зрелому подходу (схема)</text>
+<rect x="20" y="60" width="470" height="320" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="255" y="86" font-size="14" font-weight="700" text-anchor="middle" fill="#334155">Вайбкод: датчик — человек</text>
+<circle cx="60" cy="330" r="7" fill="#334155"/><text x="90" y="352" font-size="12" text-anchor="middle" fill="#64748B">«сделай лендинг»</text>
+<circle cx="420" cy="140" r="30" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/><circle cx="420" cy="140" r="5" fill="#F59E0B"/><text x="420" y="190" font-size="12" text-anchor="middle" fill="#B45309">«ок, норм»</text>
+<polyline points="60,330 180,290 140,220 270,205 300,160 392,145" fill="none" stroke="#F59E0B" stroke-width="2.5" marker-end="url(#o)"/>
+<g fill="#fff" stroke="#F59E0B" stroke-width="2"><circle cx="180" cy="290" r="5"/><circle cx="140" cy="220" r="5"/><circle cx="270" cy="205" r="5"/><circle cx="300" cy="160" r="5"/></g>
+<text x="192" y="300" font-size="11" fill="#64748B">«нет, не так»</text>
+<text x="44" y="214" font-size="11" fill="#64748B">«кнопку больше»</text>
+<text x="280" y="222" font-size="11" fill="#64748B">«почти»</text>
+<text x="196" y="152" font-size="11" fill="#64748B">«ещё чуть-чуть»</text>
+<text x="255" y="398" font-size="12" text-anchor="middle" fill="#64748B">каждую итерацию измеряет глаз человека:</text>
+<text x="255" y="414" font-size="12" text-anchor="middle" fill="#64748B">видно только то, что на экране</text>
+<rect x="510" y="60" width="470" height="320" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="745" y="86" font-size="14" font-weight="700" text-anchor="middle" fill="#334155">Зрелый подход: датчик — среда</text>
+<circle cx="550" cy="330" r="7" fill="#334155"/><text x="550" y="352" font-size="12" text-anchor="middle" fill="#64748B">задача</text>
+<circle cx="910" cy="140" r="30" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/><circle cx="910" cy="140" r="5" fill="#16A34A"/><text x="880" y="190" font-size="12" text-anchor="middle" fill="#16A34A">тесты и метрики зелёные</text>
+<polyline points="550,330 670,290 630,220 760,205 790,160 882,145" fill="none" stroke="#16A34A" stroke-width="2.5" marker-end="url(#g)"/>
+<g fill="#fff" stroke="#16A34A" stroke-width="2"><circle cx="670" cy="290" r="5"/><circle cx="630" cy="220" r="5"/><circle cx="760" cy="205" r="5"/><circle cx="790" cy="160" r="5"/></g>
+<text x="682" y="300" font-size="11" fill="#64748B">тесты ✕</text>
+<text x="534" y="214" font-size="11" fill="#64748B">метрика ↓, откат</text>
+<text x="770" y="222" font-size="11" fill="#64748B">тесты ✓</text>
+<text x="712" y="152" font-size="11" fill="#64748B">инвариант ✓</text>
+<rect x="820" y="250" width="140" height="44" rx="10" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="890" y="268" font-size="12" font-weight="700" text-anchor="middle" fill="#1E3A8A">человек</text>
+<text x="890" y="284" font-size="11" text-anchor="middle" fill="#1E3A8A">ключевые решения, gate</text>
+<text x="745" y="398" font-size="12" text-anchor="middle" fill="#64748B">измеряют тесты, метрики и откаты;</text>
+<text x="745" y="414" font-size="12" text-anchor="middle" fill="#64748B">человек — там, где без него нельзя</text>
+</svg>

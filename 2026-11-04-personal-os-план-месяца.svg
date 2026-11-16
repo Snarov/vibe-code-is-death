@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">План месяца: от напоминания до двух апрувов</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Октябрь: 17 карточек — 11 оставили, 3 нарезали на недели, 3 сдвинули. Закрыт на второй день</text>
+<rect x="64" y="180" width="170" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="149.0" y="223.4" font-size="18" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Первое число</text>
+<text x="149.0" y="246.6" font-size="16" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">напоминание</text>
+<text x="149.0" y="269.0" font-size="16" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">каждое утро</text>
+<line x1="236" y1="240" x2="258" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+<rect x="260" y="180" width="170" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="345.0" y="223.4" font-size="18" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Сбор</text>
+<text x="345.0" y="246.6" font-size="16" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">задачи месяца</text>
+<text x="345.0" y="269.0" font-size="16" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">по проектам</text>
+<line x1="432" y1="240" x2="454" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+<rect x="456" y="180" width="170" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="541.0" y="223.4" font-size="18" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Решения</text>
+<text x="541.0" y="246.6" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">по каждой</text>
+<text x="541.0" y="269.0" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">карточке</text>
+<line x1="628" y1="240" x2="650" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+<rect x="652" y="180" width="170" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="737.0" y="223.4" font-size="18" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Часы</text>
+<text x="737.0" y="246.6" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">на нижние</text>
+<text x="737.0" y="269.0" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">задачи</text>
+<line x1="824" y1="240" x2="846" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+<rect x="848" y="180" width="170" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="933.0" y="223.4" font-size="18" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Заполненность</text>
+<text x="933.0" y="246.6" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">против прошлого</text>
+<text x="933.0" y="269.0" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">месяца</text>
+<line x1="1020" y1="240" x2="1042" y2="240" stroke="#475569" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1044" y="180" width="170" height="120" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="1129.0" y="223.4" font-size="18" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">Два апрува</text>
+<text x="1129.0" y="246.6" font-size="16" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">мой и агента</text>
+<text x="1129.0" y="269.0" font-size="16" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">→ закрыт</text>
+<rect x="64" y="340" width="372" height="260" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<text x="88" y="370.5" font-size="22" font-weight="700" fill="#334155" text-anchor="start" xml:space="preserve">Пять решений</text>
+<text x="88" y="398.2" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">• оставить</text>
+<text x="88" y="424.8" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">• нарезать на недели</text>
+<text x="88" y="451.4" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">• сдвинуть</text>
+<text x="88" y="478.0" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">• снять</text>
+<text x="88" y="504.6" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">• отложить на потом</text>
+<text x="88" y="560" font-size="17" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">пример нарезки: стенд 5–11,</text>
+<text x="88" y="584" font-size="17" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">сайт 12–18, реклама 19–25</text>
+<rect x="454" y="340" width="372" height="260" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<text x="478" y="370.5" font-size="22" font-weight="700" fill="#334155" text-anchor="start" xml:space="preserve">Заполненность</text>
+<rect x="478" y="418" width="108" height="34" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="532" y="474" font-size="14" font-weight="600" fill="#78350F" text-anchor="middle" xml:space="preserve">недозаполнен</text>
+<rect x="586" y="418" width="108" height="34" fill="#DCFCE7" stroke="#22C55E" stroke-width="2"/>
+<text x="640" y="474" font-size="14" font-weight="600" fill="#14532D" text-anchor="middle" xml:space="preserve">дозаполнен</text>
+<rect x="694" y="418" width="108" height="34" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+<text x="748" y="474" font-size="14" font-weight="600" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">переполнен</text>
+<text x="586" y="410" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle" xml:space="preserve">90%</text>
+<text x="694" y="410" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle" xml:space="preserve">110%</text>
+<text x="478" y="516" font-size="18" font-weight="400" fill="#0F172A" text-anchor="start" xml:space="preserve">остаток + потрачено</text>
+<text x="478" y="542" font-size="18" font-weight="400" fill="#0F172A" text-anchor="start" xml:space="preserve">против часов на задачи</text>
+<text x="478" y="568" font-size="18" font-weight="400" fill="#0F172A" text-anchor="start" xml:space="preserve">в прошлом месяце, по дневнику</text>
+<rect x="844" y="340" width="372" height="260" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<text x="868" y="370.5" font-size="22" font-weight="700" fill="#334155" text-anchor="start" xml:space="preserve">Два апрува</text>
+<text x="868" y="397.2" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">агент — по чек-листу,</text>
+<text x="868" y="422.4" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">не при открытом замечании</text>
+<text x="868" y="472.8" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">я — явной фразой,</text>
+<text x="868" y="498.0" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">«ок» и «норм» не считаются</text>
+<text x="868" y="548.4" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">правка после апрува</text>
+<text x="868" y="573.6" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">снимает оба</text>
+<rect x="64" y="622" width="700" height="54" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="80" y="654.2" font-size="16" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">Задачи октября расставлены, у нижних есть часы, открытых замечаний нет.</text>
+<rect x="784" y="622" width="432" height="54" rx="14" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"/>
+<text x="800" y="654.2" font-size="16" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">От меня тоже апрув, закрывай планирование</text>
+</svg>

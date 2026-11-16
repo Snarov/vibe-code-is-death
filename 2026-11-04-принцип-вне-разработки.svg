@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Тот же принцип — за пределами разработки</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Агент без жёсткого сценария там, где раньше было страшно его пускать</text>
+<rect x="64" y="190" width="352" height="330" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="240.0" y="294.0" font-size="28" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">Саппорт</text>
+<text x="240.0" y="353.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">на смену графам</text>
+<text x="240.0" y="381.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">на LangChain:</text>
+<text x="240.0" y="409.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">ответы на тикеты,</text>
+<text x="240.0" y="437.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">ревью по трейсам</text>
+<rect x="464" y="190" width="352" height="330" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="640.0" y="308.0" font-size="28" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">Инфра-опс</text>
+<text x="640.0" y="367.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">конфиги PostgreSQL,</text>
+<text x="640.0" y="395.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">стенд и откат,</text>
+<text x="640.0" y="423.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">бэкап перед правкой</text>
+<rect x="864" y="190" width="352" height="330" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="1040.0" y="308.0" font-size="28" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">Личный ассистент</text>
+<text x="1040.0" y="367.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">деньги, задачи, месяц,</text>
+<text x="1040.0" y="395.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">расчёт окупаемости GPU</text>
+<text x="1040.0" y="423.0" font-size="20" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">под инференс 70B</text>
+<text x="640" y="610" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">Это уже не поделки на один вечер, а системы, которые живут и развиваются</text>
+</svg>

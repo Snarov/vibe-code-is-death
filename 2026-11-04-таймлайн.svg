@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Явление появилось раньше, чем название</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">От автокомплита до vibe coding, шкала не в масштабе</text>
+<line x1="70" y1="380" x2="1210" y2="380" stroke="#CBD5E1" stroke-width="4"/>
+<circle cx="110" cy="380" r="10" fill="#475569"/>
+<line x1="110" y1="390" x2="110" y2="408" stroke="#475569" stroke-width="2"/>
+<text x="110" y="434" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">1996</text>
+<text x="110" y="462" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">IntelliSense:</text>
+<text x="110" y="488" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">Tab по именам</text>
+<circle cx="245" cy="380" r="10" fill="#475569"/>
+<line x1="245" y1="370" x2="245" y2="352" stroke="#475569" stroke-width="2"/>
+<text x="245" y="340" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">2020</text>
+<text x="245" y="310" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">few-shot</text>
+<text x="245" y="284" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">GPT-3:</text>
+<circle cx="380" cy="380" r="10" fill="#475569"/>
+<line x1="380" y1="390" x2="380" y2="408" stroke="#475569" stroke-width="2"/>
+<text x="380" y="434" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">окт 2022</text>
+<text x="380" y="462" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">ReAct,</text>
+<text x="380" y="488" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">LangChain</text>
+<circle cx="515" cy="380" r="10" fill="#475569"/>
+<line x1="515" y1="370" x2="515" y2="352" stroke="#475569" stroke-width="2"/>
+<text x="515" y="340" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">ноя 2022</text>
+<text x="515" y="310" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">ChatGPT</text>
+<circle cx="650" cy="380" r="10" fill="#475569"/>
+<line x1="650" y1="390" x2="650" y2="408" stroke="#475569" stroke-width="2"/>
+<text x="650" y="434" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">мар 2023</text>
+<text x="650" y="462" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">AutoGPT</text>
+<circle cx="785" cy="380" r="10" fill="#2563EB"/>
+<line x1="785" y1="370" x2="785" y2="352" stroke="#2563EB" stroke-width="2"/>
+<text x="785" y="340" font-size="20" font-weight="700" fill="#2563EB" text-anchor="middle" xml:space="preserve">лето 2023</text>
+<text x="785" y="310" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">я: Cursor 0.2</text>
+<circle cx="930" cy="380" r="10" fill="#475569"/>
+<line x1="930" y1="390" x2="930" y2="408" stroke="#475569" stroke-width="2"/>
+<text x="930" y="434" font-size="20" font-weight="700" fill="#475569" text-anchor="middle" xml:space="preserve">окт–ноя 2024</text>
+<text x="930" y="462" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">Bolt.new,</text>
+<text x="930" y="488" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">Lovable</text>
+<circle cx="1120" cy="380" r="10" fill="#DC2626"/>
+<line x1="1120" y1="370" x2="1120" y2="352" stroke="#DC2626" stroke-width="2"/>
+<text x="1120" y="340" font-size="20" font-weight="700" fill="#DC2626" text-anchor="middle" xml:space="preserve">фев 2025</text>
+<text x="1120" y="310" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">«vibe coding»</text>
+<text x="1120" y="284" font-size="18" font-weight="400" fill="#0F172A" text-anchor="middle" xml:space="preserve">Карпатый:</text>
+<rect x="760" y="524" width="400" height="52" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="960.0" y="556.1" font-size="19" font-weight="400" fill="#78350F" text-anchor="middle" xml:space="preserve">так уже работали многие, и я тоже</text>
+<text x="640" y="650" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">В феврале 2025-го Карпатый дал имя тому, что уже было</text>
+</svg>

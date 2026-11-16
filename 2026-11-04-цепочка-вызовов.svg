@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Цепочка вызовов: выход шага — вход следующего</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">В чате это делалось руками: скопировал результат, вставил, добавил инструкцию</text>
+<rect x="64" y="200" width="252" height="140" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5"/>
+<text x="190.0" y="236.5" font-size="20" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Письмо клиента</text>
+<text x="190.0" y="263.5" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«Заказ 48213</text>
+<text x="190.0" y="290.1" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">так и не пришёл,</text>
+<text x="190.0" y="316.7" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">где он?»</text>
+<rect x="364" y="200" width="252" height="140" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="490.0" y="249.8" font-size="20" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Шаг 1 · модель</text>
+<text x="490.0" y="276.8" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">вытащить</text>
+<text x="490.0" y="303.4" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">номер заказа</text>
+<rect x="664" y="200" width="252" height="140" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="790.0" y="249.8" font-size="20" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Шаг 2 · код</text>
+<text x="790.0" y="276.8" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">запрос в базу</text>
+<text x="790.0" y="303.4" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">по номеру</text>
+<rect x="964" y="200" width="252" height="140" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="1090.0" y="249.8" font-size="20" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Шаг 3 · модель</text>
+<text x="1090.0" y="276.8" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">сформулировать</text>
+<text x="1090.0" y="303.4" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">ответ клиенту</text>
+<line x1="320" y1="270" x2="360" y2="270" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="620" y1="270" x2="660" y2="270" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="920" y1="270" x2="960" y2="270" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="490.0" y1="342" x2="490.0" y2="376" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="364" y="380" width="252" height="80" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="490.0" y="425.8" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">«48213»</text>
+<line x1="790.0" y1="342" x2="790.0" y2="376" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="664" y="380" width="252" height="80" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="790.0" y="413.2" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">«в пути,</text>
+<text x="790.0" y="438.4" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">будет 6 ноября»</text>
+<line x1="1090.0" y1="342" x2="1090.0" y2="376" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="964" y="380" width="252" height="80" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1090.0" y="413.2" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">«Ваш заказ в пути,</text>
+<text x="1090.0" y="438.4" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">привезём 6 ноября»</text>
+<path d="M618 420 C 646 420, 680 410, 680 346" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M918 420 C 946 420, 980 410, 980 346" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="64" y="510" width="22" height="22" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="96" y="528" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">вызов модели</text>
+<rect x="264" y="510" width="22" height="22" rx="5" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="296" y="528" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">обычный код</text>
+<text x="640" y="636" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">Первые агенты — это этот приём плюс few-shot, переложенные в код</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Вайбкод меня сначала озолотил, а потом убил</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Доход с фриланса качественно: без шкалы, только форма</text>
+<line x1="120" y1="190" x2="120" y2="600" stroke="#CBD5E1" stroke-width="3"/>
+<line x1="120" y1="600" x2="1190" y2="600" stroke="#CBD5E1" stroke-width="3"/>
+<text x="132" y="196" font-size="18" font-weight="600" fill="#64748B" text-anchor="start" xml:space="preserve">доход с фриланса</text>
+<line x1="760" y1="200" x2="760" y2="600" stroke="#EF4444" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="760" y="654" font-size="18" font-weight="700" fill="#DC2626" text-anchor="middle" xml:space="preserve">Bolt.new</text>
+<line x1="900" y1="200" x2="900" y2="600" stroke="#EF4444" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="900" y="654" font-size="18" font-weight="700" fill="#DC2626" text-anchor="middle" xml:space="preserve">Lovable</text>
+<path d="M160 520 C300 500, 380 400, 480 330 S650 225, 720 232" fill="none" stroke="#3B82F6" stroke-width="5"/>
+<path d="M720 232 C800 245, 860 340, 920 450 S1040 565, 1150 570" fill="none" stroke="#EF4444" stroke-width="5"/>
+<circle cx="160" cy="520" r="8" fill="#3B82F6"/>
+<text x="170" y="556" font-size="18" font-weight="700" fill="#1D4ED8" text-anchor="start" xml:space="preserve">Cursor 0.2</text>
+<text x="560" y="212" font-size="20" font-weight="700" fill="#1D4ED8" text-anchor="middle" xml:space="preserve">×5 заказов, конструктор</text>
+<text x="1040" y="500" font-size="20" font-weight="700" fill="#DC2626" text-anchor="start" xml:space="preserve">заказы пропали</text>
+<circle cx="1150" cy="570" r="8" fill="#EF4444"/>
+<text x="1150" y="545" font-size="20" font-weight="800" fill="#DC2626" text-anchor="middle" xml:space="preserve">найм</text>
+<text x="160" y="630" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">лето 2023</text>
+<text x="420" y="630" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">2024</text>
+<text x="760" y="630" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">окт 2024</text>
+<text x="900" y="630" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">ноя 2024</text>
+<text x="1140" y="630" font-size="18" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">2025</text>
+<text x="640" y="698" font-size="26" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">«Быстро и низкокачественно» — не навык, а временное окно</text>
+</svg>

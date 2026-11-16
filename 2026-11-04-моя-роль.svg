@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Как менялась моя роль</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Агентную разработку я прошёл целиком: с Cursor 0.2 летом 2023 года</text>
+<rect x="64" y="190" width="352" height="320" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="240.0" y="287.0" font-size="26" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Автокомплит</text>
+<text x="240.0" y="345.2" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">жмёшь Tab — модель</text>
+<text x="240.0" y="373.2" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">дописывает строчку</text>
+<text x="240.0" y="431.3" font-size="22" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Пишу код я</text>
+<line x1="420" y1="350" x2="460" y2="350" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="464" y="190" width="352" height="320" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="640.0" y="287.0" font-size="26" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Инлайн-команды</text>
+<text x="640.0" y="345.2" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«перепиши без цикла»</text>
+<text x="640.0" y="373.2" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">→ получаешь диф</text>
+<text x="640.0" y="431.3" font-size="22" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Пишу я, но быстрее</text>
+<line x1="820" y1="350" x2="860" y2="350" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="864" y="190" width="352" height="320" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="1040.0" y="287.0" font-size="26" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Агенты</text>
+<text x="1040.0" y="345.2" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">день работы</text>
+<text x="1040.0" y="373.2" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">делается за час</text>
+<text x="1040.0" y="431.3" font-size="22" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Я заказываю код</text>
+<text x="640" y="610" font-size="26" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">Работает — и ладно. Это было похоже на магию, и я в неё поверил</text>
+</svg>

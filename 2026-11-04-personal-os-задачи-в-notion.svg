@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Задачи в Notion: от направления до подзадачи</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Агент ходит в Notion по MCP, а задачу я ставлю одной фразой</text>
+<rect x="64" y="180" width="540" height="62" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="86" y="220" font-size="22" font-weight="700" fill="#334155" text-anchor="start" xml:space="preserve">Направление</text>
+<text x="250" y="220" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">Технологии · Поместье · Финансы</text>
+<path d="M82 242 V293 H98" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="100" y="262" width="540" height="62" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="122" y="302" font-size="22" font-weight="700" fill="#334155" text-anchor="start" xml:space="preserve">Цель</text>
+<text x="286" y="302" font-size="19" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">метрика и срок моими словами</text>
+<path d="M118 324 V375 H134" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="136" y="344" width="540" height="62" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="158" y="384" font-size="22" font-weight="700" fill="#1E3A8A" text-anchor="start" xml:space="preserve">Проект</text>
+<text x="322" y="384" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">ведёт ровно к одной цели</text>
+<path d="M154 406 V457 H170" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="172" y="426" width="540" height="62" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="194" y="466" font-size="22" font-weight="700" fill="#1E3A8A" text-anchor="start" xml:space="preserve">Задача</text>
+<text x="358" y="466" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">ровно в одном проекте</text>
+<path d="M190 488 V539 H206" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="208" y="508" width="540" height="62" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="230" y="548" font-size="22" font-weight="700" fill="#1E3A8A" text-anchor="start" xml:space="preserve">Подзадача</text>
+<text x="394" y="548" font-size="19" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">через «Родительская задача»</text>
+<text x="64" y="616" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Горизонт: год · квартал · месяц · неделя · день</text>
+<text x="64" y="646" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Приоритет: максимальный · высокий · средний · низкий</text>
+<text x="64" y="676" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Оценка и факт — в часах</text>
+<rect x="760" y="180" width="456" height="300" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<text x="784" y="212" font-size="17" font-weight="600" fill="#64748B" text-anchor="start" xml:space="preserve">Карточка задачи</text>
+<text x="784" y="248" font-size="22" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Привлечение лидов Supagent</text>
+<text x="784" y="292" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Проект</text>
+<text x="930" y="292" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">Supagent</text>
+<text x="784" y="322" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Горизонт</text>
+<text x="930" y="322" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">месяц</text>
+<text x="784" y="352" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Приоритет</text>
+<text x="930" y="352" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">высокий</text>
+<text x="784" y="382" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Срок</text>
+<text x="930" y="382" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">1–31 октября</text>
+<text x="784" y="412" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Оценка (ч)</text>
+<text x="930" y="412" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">12, сумма недель</text>
+<text x="784" y="442" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Подзадачи</text>
+<text x="930" y="442" font-size="18" font-weight="600" fill="#0F172A" text-anchor="start" xml:space="preserve">стенд, сайт, реклама</text>
+<rect x="860" y="500" width="356" height="72" rx="14" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"/>
+<text x="876" y="529.2" font-size="18" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">Заведи созвон с клиентом</text>
+<text x="876" y="554.4" font-size="18" font-weight="400" fill="#1E3A8A" text-anchor="start" xml:space="preserve">в Supagent на следующую неделю</text>
+<rect x="760" y="586" width="420" height="100" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+<text x="776" y="616.6" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">Сам поставил: проект Supagent,</text>
+<text x="776" y="641.8" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">горизонт неделя, приоритет средний.</text>
+<text x="776" y="667.0" font-size="18" font-weight="400" fill="#334155" text-anchor="start" xml:space="preserve">Поправь, если не так.</text>
+</svg>

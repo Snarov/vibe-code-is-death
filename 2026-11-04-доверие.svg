@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Разница не в коде</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Код у меня и сейчас кривой, и я его почти не читаю</text>
+<text x="640" y="270" font-size="48" font-weight="800" fill="#0F172A" text-anchor="middle" xml:space="preserve">«Доверие — свойство системы,</text>
+<text x="640" y="334" font-size="48" font-weight="800" fill="#0F172A" text-anchor="middle" xml:space="preserve">а не модели»</text>
+<text x="640" y="386" font-size="22" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">— Рефат</text>
+<rect x="64" y="440" width="564" height="190" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="346.0" y="502.9" font-size="22" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Вайбкод держится на</text>
+<text x="346.0" y="539.8" font-size="28" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">глазе, везении</text>
+<text x="346.0" y="579.0" font-size="28" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">и вайбе чуда</text>
+<rect x="652" y="440" width="564" height="190" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="934.0" y="502.9" font-size="22" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">AI-assisted держится на</text>
+<text x="934.0" y="539.8" font-size="28" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">тактике</text>
+<text x="934.0" y="579.0" font-size="28" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">и проверках</text>
+</svg>

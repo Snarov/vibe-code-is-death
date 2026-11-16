@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Few-shot: учим примерами, а не правилами</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Термин из пейпера про GPT-3 «Language Models are Few-Shot Learners», 2020</text>
+<rect x="64" y="170" width="740" height="450" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5"/>
+<text x="92" y="210" font-size="18" font-weight="600" fill="#64748B" text-anchor="start" xml:space="preserve">Промпт в чате</text>
+<rect x="92" y="232" width="480" height="54" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="332.0" y="265.1" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«Где мой заказ? Жду уже неделю»</text>
+<line x1="582" y1="259" x2="624" y2="259" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="632" y="232" width="148" height="54" rx="27" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="706.0" y="265.1" font-size="19" font-weight="600" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">доставка</text>
+<rect x="92" y="304" width="480" height="54" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="332.0" y="337.1" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«Хочу вернуть куртку, не подошла»</text>
+<line x1="582" y1="331" x2="624" y2="331" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="632" y="304" width="148" height="54" rx="27" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="706.0" y="337.1" font-size="19" font-weight="600" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">возврат</text>
+<rect x="92" y="376" width="480" height="54" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="332.0" y="409.1" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«Карта списала деньги дважды»</text>
+<line x1="582" y1="403" x2="624" y2="403" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="632" y="376" width="148" height="54" rx="27" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="706.0" y="409.1" font-size="19" font-weight="600" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">оплата</text>
+<line x1="92" y1="460" x2="780" y2="460" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="92" y="482" width="480" height="54" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="332.0" y="515.1" font-size="19" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">«Пришёл не тот размер, как обменять?»</text>
+<line x1="582" y1="509" x2="624" y2="509" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="632" y="482" width="148" height="54" rx="27" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="706.0" y="515.1" font-size="19" font-weight="700" fill="#78350F" text-anchor="middle" xml:space="preserve">возврат</text>
+<text x="92" y="580" font-size="18" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">четвёртое модель размечает сама, по образцу</text>
+<rect x="840" y="170" width="376" height="210" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="1028.0" y="229.5" font-size="24" font-weight="700" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">Без примеров</text>
+<text x="1028.0" y="284.6" font-size="19" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">отвечает как попало:</text>
+<text x="1028.0" y="311.2" font-size="19" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">«Это вопрос о доставке»,</text>
+<text x="1028.0" y="337.8" font-size="19" font-weight="400" fill="#7F1D1D" text-anchor="middle" xml:space="preserve">«Категория: логистика»…</text>
+<rect x="840" y="410" width="376" height="210" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="1028.0" y="469.5" font-size="24" font-weight="700" fill="#14532D" text-anchor="middle" xml:space="preserve">С примерами</text>
+<text x="1028.0" y="524.6" font-size="19" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">отвечает предсказуемо:</text>
+<text x="1028.0" y="551.2" font-size="19" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">одно слово из трёх,</text>
+<text x="1028.0" y="577.8" font-size="19" font-weight="400" fill="#14532D" text-anchor="middle" xml:space="preserve">в том же формате</text>
+</svg>

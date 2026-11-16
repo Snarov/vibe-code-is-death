@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">Spec-driven development: полувайбкод</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Четвёртый уровень: вайб просто переехал из чата в документы</text>
+<rect x="64" y="180" width="564" height="360" rx="16" fill="#DCFCE7" stroke="#22C55E" stroke-width="2.5"/>
+<text x="88" y="230.6" font-size="26" font-weight="700" fill="#14532D" text-anchor="start" xml:space="preserve">Что даёт</text>
+<text x="88" y="291.3" font-size="21" font-weight="400" fill="#14532D" text-anchor="start" xml:space="preserve">• выше автономность</text>
+<text x="88" y="320.7" font-size="21" font-weight="400" fill="#14532D" text-anchor="start" xml:space="preserve">• чётче требования</text>
+<text x="88" y="350.1" font-size="21" font-weight="400" fill="#14532D" text-anchor="start" xml:space="preserve">• лучше покрытие тестами</text>
+<text x="88" y="379.5" font-size="21" font-weight="400" fill="#14532D" text-anchor="start" xml:space="preserve">• выше качество</text>
+<rect x="652" y="180" width="564" height="360" rx="16" fill="#FEE2E2" stroke="#EF4444" stroke-width="2.5"/>
+<text x="676" y="230.6" font-size="26" font-weight="700" fill="#7F1D1D" text-anchor="start" xml:space="preserve">Что ломается</text>
+<text x="676" y="291.3" font-size="21" font-weight="400" fill="#7F1D1D" text-anchor="start" xml:space="preserve">• спеку агент понимает по-своему</text>
+<text x="676" y="320.7" font-size="21" font-weight="400" fill="#7F1D1D" text-anchor="start" xml:space="preserve">• спеки расходятся с кодом</text>
+<text x="676" y="350.1" font-size="21" font-weight="400" fill="#7F1D1D" text-anchor="start" xml:space="preserve">• новая спека частично заменяет</text>
+<text x="676" y="379.5" font-size="21" font-weight="400" fill="#7F1D1D" text-anchor="start" xml:space="preserve">  куски десятка старых</text>
+<text x="676" y="408.9" font-size="21" font-weight="400" fill="#7F1D1D" text-anchor="start" xml:space="preserve">• старые не удаляются</text>
+<text x="640" y="600" font-size="22" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">Вместо «сделай красиво» — строгие спеки, ADR и требования</text>
+<text x="640" y="648" font-size="24" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">Агент долго работает без человека, но гарантий точного исполнения нет</text>
+</svg>

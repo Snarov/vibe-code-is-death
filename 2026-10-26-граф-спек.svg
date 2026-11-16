@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker></defs>
+<rect width="1000" height="640" fill="#fff"/>
+<text x="30" y="40" font-size="20" font-weight="700" fill="#0F172A">Граф спек после ~90 изменений (схема)</text>
+<text x="30" y="64" font-size="13" fill="#64748B">Красные стрелки — «заменяет (частично)», серые пунктиры — «связано». Каждая новая спека тянется к десятку старых.</text>
+<line x1="779" y1="257" x2="792" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="619" y1="115" x2="208" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="673" y1="520" x2="561" y2="560" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="718" y1="173" x2="619" y2="115" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="619" y1="115" x2="500" y2="95" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="673" y1="520" x2="439" y2="560" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="381" y1="115" x2="792" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="221" y1="257" x2="381" y2="115" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="500" y1="95" x2="779" y2="257" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="439" y1="560" x2="381" y2="115" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="754" y1="447" x2="792" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="221" y1="257" x2="718" y2="173" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="282" y1="173" x2="619" y2="115" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="792" y1="355" x2="779" y2="257" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="381" y1="115" x2="500" y2="95" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="282" y1="173" x2="246" y2="448" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="221" y1="257" x2="792" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="221" y1="257" x2="792" y2="355" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="779" y1="257" x2="718" y2="173" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="792" y1="355" x2="381" y2="115" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="246" y1="448" x2="282" y2="173" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="208" y1="355" x2="282" y2="173" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="282" y1="173" x2="754" y2="447" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="619" y1="115" x2="282" y2="173" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="327" y1="520" x2="754" y2="447" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="246" y1="448" x2="673" y2="520" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="439" y1="560" x2="779" y2="257" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="718" y1="173" x2="779" y2="257" stroke="#F59E0B" stroke-width="1.5" marker-end="url(#a)" opacity=".7"/>
+<line x1="500" y1="290" x2="500" y2="129" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="525" y1="295" x2="603" y2="145" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="542" y1="307" x2="691" y2="193" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="550" y1="320" x2="746" y2="266" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="552" y1="333" x2="758" y2="352" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="547" y1="347" x2="724" y2="433" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="535" y1="360" x2="650" y2="495" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="513" y1="369" x2="552" y2="527" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="487" y1="369" x2="448" y2="527" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="465" y1="360" x2="350" y2="495" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="453" y1="347" x2="276" y2="433" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="448" y1="333" x2="242" y2="352" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="450" y1="320" x2="254" y2="266" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<line x1="458" y1="307" x2="309" y2="193" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5 4"/>
+<line x1="475" y1="295" x2="397" y2="145" stroke="#EF4444" stroke-width="2" marker-end="url(#a)"/>
+<g><circle cx="500" cy="95" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="500" y="92" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="500" y="107" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№65</text></g>
+<g><circle cx="619" cy="115" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="619" y="112" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="619" y="127" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№71</text></g>
+<g><circle cx="718" cy="173" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="718" y="170" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="718" y="185" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№72</text></g>
+<g><circle cx="779" cy="257" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="779" y="254" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="779" y="269" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№73</text></g>
+<g><circle cx="792" cy="355" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="792" y="352" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="792" y="367" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№76</text></g>
+<g><circle cx="754" cy="447" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="754" y="444" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="754" y="459" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№79</text></g>
+<g><circle cx="673" cy="520" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="673" y="517" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="673" y="532" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№81</text></g>
+<g><circle cx="561" cy="560" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="561" y="557" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="561" y="572" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№82</text></g>
+<g><circle cx="439" cy="560" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="439" y="557" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="439" y="572" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№83</text></g>
+<g><circle cx="327" cy="520" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="327" y="517" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="327" y="532" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№84</text></g>
+<g><circle cx="246" cy="448" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="246" y="445" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="246" y="460" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№85</text></g>
+<g><circle cx="208" cy="355" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="208" y="352" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="208" y="367" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№86</text></g>
+<g><circle cx="221" cy="257" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="221" y="254" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="221" y="269" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№87</text></g>
+<g><circle cx="282" cy="173" r="30" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="282" y="170" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="282" y="185" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№88</text></g>
+<g><circle cx="381" cy="115" r="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="381" y="112" font-size="13" text-anchor="middle" fill="#334155">Спека</text><text x="381" y="127" font-size="13" font-weight="700" text-anchor="middle" fill="#334155">№89</text></g>
+<rect x="440" y="295" width="120" height="70" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="3"/>
+<text x="500" y="326" font-size="14" font-weight="700" text-anchor="middle" fill="#1E3A8A">Новая спека</text><text x="500" y="344" font-size="12" text-anchor="middle" fill="#1E3A8A">заменяет 8, связана с 15</text>
+<g font-size="13" fill="#334155"><circle cx="30" cy="616" r="8" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/><text x="46" y="620">заменяется новой спекой (полностью или частично)</text><circle cx="400" cy="616" r="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/><text x="416" y="620">просто связана — но насколько актуальна, неясно</text></g>
+</svg>

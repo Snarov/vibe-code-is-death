@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">2024: секретный взлёт</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">Про Cursor я не рассказывал никому, кроме самых достойных</text>
+<rect x="64" y="190" width="270" height="300" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="199.0" y="311.8" font-size="56" font-weight="800" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">×5</text>
+<text x="199.0" y="386.3" font-size="22" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">заказов, чем</text>
+<text x="199.0" y="417.1" font-size="22" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">у остальных</text>
+<rect x="358" y="190" width="270" height="300" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="493.0" y="311.8" font-size="56" font-weight="800" fill="#334155" text-anchor="middle" xml:space="preserve">30 мин</text>
+<text x="493.0" y="386.3" font-size="22" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">максимум</text>
+<text x="493.0" y="417.1" font-size="22" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">на лендинг</text>
+<rect x="652" y="190" width="270" height="300" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="787.0" y="311.8" font-size="56" font-weight="800" fill="#334155" text-anchor="middle" xml:space="preserve">$10</text>
+<text x="787.0" y="386.3" font-size="22" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">за лендинг</text>
+<rect x="946" y="190" width="270" height="300" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+<text x="1081.0" y="311.8" font-size="56" font-weight="800" fill="#78350F" text-anchor="middle" xml:space="preserve">~1000</text>
+<text x="1081.0" y="386.3" font-size="22" font-weight="400" fill="#78350F" text-anchor="middle" xml:space="preserve">сайтов почти</text>
+<text x="1081.0" y="417.1" font-size="22" font-weight="400" fill="#78350F" text-anchor="middle" xml:space="preserve">на пассиве</text>
+<text x="640" y="580" font-size="26" font-weight="700" fill="#0F172A" text-anchor="middle" xml:space="preserve">Качество так себе, но вещи очень рабочие, особенно UI</text>
+<text x="640" y="626" font-size="20" font-weight="400" fill="#64748B" text-anchor="middle" xml:space="preserve">Конструктор сайтов собирал лендинги генерациями на GPT-3.5 Turbo</text>
+</svg>

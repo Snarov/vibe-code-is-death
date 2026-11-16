@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker><marker id="am" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#F59E0B"/></marker></defs>
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<text x="64" y="92" font-size="40" font-weight="700" fill="#0F172A" text-anchor="start" xml:space="preserve">supagent: агенты пишут почти всё, но не по вайбу</text>
+<text x="64" y="134" font-size="22" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">От тикета до ночного фикса</text>
+<rect x="64" y="190" width="300" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="214.0" y="244.4" font-size="26" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Тикет</text>
+<text x="214.0" y="274.6" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">от клиента</text>
+<rect x="490" y="190" width="300" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="640.0" y="244.4" font-size="26" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">supagent</text>
+<text x="640.0" y="274.6" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">отвечает на тикет</text>
+<rect x="916" y="190" width="300" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="1066.0" y="244.4" font-size="26" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Cursor</text>
+<text x="1066.0" y="274.6" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">ревьюит по трейсам</text>
+<rect x="916" y="430" width="300" height="120" rx="16" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2.5"/>
+<text x="1066.0" y="484.4" font-size="26" font-weight="700" fill="#334155" text-anchor="middle" xml:space="preserve">Баг</text>
+<text x="1066.0" y="514.6" font-size="20" font-weight="400" fill="#334155" text-anchor="middle" xml:space="preserve">→ карточка автоматически</text>
+<rect x="490" y="430" width="300" height="120" rx="16" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2.5"/>
+<text x="640.0" y="484.4" font-size="26" font-weight="700" fill="#78350F" text-anchor="middle" xml:space="preserve">Человек</text>
+<text x="640.0" y="514.6" font-size="20" font-weight="400" fill="#78350F" text-anchor="middle" xml:space="preserve">подтверждает карточку</text>
+<rect x="64" y="430" width="300" height="120" rx="16" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="214.0" y="484.4" font-size="26" font-weight="700" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">Claude</text>
+<text x="214.0" y="514.6" font-size="20" font-weight="400" fill="#1E3A8A" text-anchor="middle" xml:space="preserve">ночью забирает на фикс</text>
+<line x1="368" y1="250" x2="486" y2="250" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="794" y1="250" x2="912" y2="250" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="1066" y1="314" x2="1066" y2="426" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="912" y1="490" x2="798" y2="490" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="486" y1="490" x2="372" y2="490" stroke="#475569" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="64" y="600" width="22" height="22" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+<text x="96" y="618" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">агент</text>
+<rect x="244" y="600" width="22" height="22" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+<text x="276" y="618" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">человек</text>
+<rect x="424" y="600" width="22" height="22" rx="5" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+<text x="456" y="618" font-size="19" font-weight="400" fill="#64748B" text-anchor="start" xml:space="preserve">данные</text>
+<text x="1216" y="668" font-size="22" font-weight="700" fill="#0F172A" text-anchor="end" xml:space="preserve">Внимание инженера ушло в среду, верификацию и супервайзинг</text>
+</svg>
